@@ -19,6 +19,7 @@ const config: Config = {
       },
       fontSize: {
         logo: ["40px", "48px"],
+        titleMain: ["56px", "64px"],
       }
     },
   },

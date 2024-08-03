@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-link {
+  @apply w-[170px] h-12 rounded-xl font-bold text-base flex items-center justify-center;
+}
