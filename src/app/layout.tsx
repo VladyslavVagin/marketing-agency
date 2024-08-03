@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { metadata } from '@/data/metadata';
 import { Montserrat, Paytone_One } from "next/font/google";
 import "./globals.css";
 
@@ -17,12 +17,6 @@ export const paytoneOne = Paytone_One({
   style: ["normal"],
   variable: "--font-paytone-one",
 });
-
-export const metadata: Metadata = {
-  title: "Marko. - Marketing Agency",
-  description:
-    "We help businesses grow by creating digital experiences. We design and develop websites, apps, and digital marketing campaigns.",
-};
 
 export default function RootLayout({
   children,

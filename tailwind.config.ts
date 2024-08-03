@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         accent: "#583EBC",
         blackLight: "#333333",
+        yellowIcon: "#F8F7AB",
+        grayText: "rgba(51, 51, 51, 0.5)",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
