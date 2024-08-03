@@ -1,4 +1,3 @@
-import { metadata } from '@/data/metadata';
 import { Montserrat, Paytone_One } from "next/font/google";
 import "./globals.css";
 
@@ -26,6 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Vlad Vagin is a professional web developer specializing in modern JavaScript technologies like React, Next.js and Node.js."
+        />
+        <title>Vlad Vagin - Web Developer</title>
+        <meta />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"

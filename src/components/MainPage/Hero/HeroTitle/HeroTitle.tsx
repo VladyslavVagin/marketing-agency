@@ -19,7 +19,7 @@ const HeroTitle = () => {
           className="absolute top-0 right-[-120px]"
         />
       </div>
-      <p className="text-lg font-normal text-justify">
+      <p className="title-text text-justify">
         Frontend and MERN-stack Web Dveloper who specialize in HTML5/CSS3, JavaScript,
         React.js, Next.js, TypeScript, Node.js, MongoDB, REST APIs and WordPress.
       </p>
