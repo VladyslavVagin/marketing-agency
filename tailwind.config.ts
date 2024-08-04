@@ -22,7 +22,19 @@ const config: Config = {
       fontSize: {
         logo: ["40px", "48px"],
         titleMain: ["56px", "64px"],
-      }
+      },
+      transformOrigin: {
+        '50': '50% 50%',
+      },
+      keyframes: {
+        'stroke-offset': {
+          '0%': { strokeDashoffset: '100' },
+          '100%': { strokeDashoffset: '0' },
+        },
+      },
+      animation: {
+        'stroke-offset': 'stroke-offset 0.35s linear',
+      },
     },
   },
   plugins: [],

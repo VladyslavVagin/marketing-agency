@@ -1,10 +1,36 @@
-const ListSkills = () => {
+import { paytoneOne } from "@/app/layout";
+import { skills } from "@/data/skills";
+import ProgressBar from "../ProgressBar/ProgressBar";
 
+type Skill = {
+  id: number;
+  name: string;
+  progress: number;
+  color: string;
+};
+
+const ListSkills = () => {
   return (
-    <ul className="flex flex-col items-center mt-14">
-      <li className="w-[270px] h-[272px] rounded-2xl bg-white shadow-xl flex items-center justify-center">
-        <div className="w-40 h-40"></div>
-      </li>
+    <ul className="flex flex-col items-center mt-14 gap-4">
+      {skills.map((skill: Skill) => (
+        <li
+          key={skill.id}
+          className="w-[270px] h-[272px] rounded-2xl bg-white shadow-xl flex flex-col items-center justify-center"
+        >
+          <div className="relative w-40 h-40">
+            <ProgressBar
+              progress={skill.progress}
+              colorProgress={skill.color}
+            />
+            <p
+              className={`${paytoneOne.className} absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-logo font-normal text-black`}
+            >
+              {skill.progress}%
+            </p>
+          </div>
+          <h3 className="mt-2 text-2xl font-light text-black">{skill.name}</h3>
+        </li>
+      ))}
     </ul>
   );
 };

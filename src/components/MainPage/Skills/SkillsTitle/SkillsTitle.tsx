@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { paytoneOne } from "@/app/layout";
 
 const SkillsTitle = () => {
   return (
-    <div>
+    <div className="relative">
       <p className="subtitle mb-4">my skills</p>
-      <h2 className={`title mb-9 ${paytoneOne.className}`}>
+      <h2 className={`title mb-9 ${paytoneOne.className} relative z-20`}>
         Frontend, Backend and Software
       </h2>
       <p className="text-title">
@@ -13,6 +14,7 @@ const SkillsTitle = () => {
         various development tools such as npm and Git, Redux and Firebase. My
         focus is on writing clean, efficient, and maintainable code.
       </p>
+      <Image className="absolute z-10 top-0 right-0" src="/images/hero/shape.png" alt="Shape for decoration" width={176} height={176} />
     </div>
   );
 };
