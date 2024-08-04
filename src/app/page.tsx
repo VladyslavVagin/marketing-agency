@@ -2,6 +2,7 @@ import Hero from "@/components/MainPage/Hero/Hero";
 import MyExpertise from "@/components/MainPage/MyExpertise/MyExpertise";
 import Skills from "@/components/MainPage/Skills/Skills";
 import Portfolio from "@/components/MainPage/Portfolio/Portfolio";
+import Education from "@/components/MainPage/Education/Education";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Skills />
       </section>
       <Portfolio />
+      <Education />
     </>
   );
 }

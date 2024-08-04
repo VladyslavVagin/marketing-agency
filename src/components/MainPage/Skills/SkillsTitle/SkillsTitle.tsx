@@ -8,7 +8,7 @@ const SkillsTitle = () => {
       <h2 className={`title mb-9 ${paytoneOne.className} relative z-20`}>
         Frontend, Backend and Software
       </h2>
-      <p className="text-title">
+      <p className="title-text">
         I specialize in JavaScript, TypeScript, React, Next and have experience
         with backend development using Node.js. I'm also proficient in using
         various development tools such as npm and Git, Redux and Firebase. My

@@ -3,7 +3,7 @@ import ListProjects from "./ListProjects/ListProjects";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section className="pb-16">
       <div className="p-3.5">
         <PortfolioTitle />
         <ListProjects />
