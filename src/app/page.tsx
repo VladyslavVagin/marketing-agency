@@ -16,7 +16,7 @@ export default function Home() {
       </section>
       <Portfolio />
       <Education />
-      <section className="bg-accent rounded-[50px] mt-20 p-4">
+      <section className="bg-accent rounded-[50px] mt-20 p-4 relative z-10">
         <Contact />
         <SocialMedia />
       </section>
