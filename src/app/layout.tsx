@@ -1,6 +1,6 @@
 import { Montserrat, Paytone_One } from "next/font/google";
 import "./globals.css";
-
+import Toast from "@/components/Toast/Toast";
 import Header from "@/components/Header/Header";
 
 const montserrat = Montserrat({
@@ -41,6 +41,7 @@ export default function RootLayout({
       <body className={`${montserrat.className}`}>
         <Header />
         <main className="bg-[#e3e3e3] min-h-screen">{children}</main>
+        <Toast />
       </body>
     </html>
   );
