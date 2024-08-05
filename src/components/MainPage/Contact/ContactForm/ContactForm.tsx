@@ -1,12 +1,15 @@
 "use client";
 
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import emailjs from '@emailjs/browser';
 import toast from "react-hot-toast";
 import { contactSchema } from "@/schemas/schemas";
 import { paytoneOne } from "@/app/layout";
 
 const ContactForm = () => {
+  const formRef = useRef(null);
   const {
     register,
     handleSubmit,
@@ -14,10 +17,25 @@ const ContactForm = () => {
     reset,
   } = useForm({ resolver: yupResolver(contactSchema), mode: "onBlur" });
 
-  const onSubmit = (data: { name: string; email: string; message: string }) => {
-    console.log(data);
-    toast.success("Message sent successfully!");
-    reset();
+  const onSubmit = async () => {
+    try {
+      if (formRef.current) {
+        await emailjs.sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_SERVICE_TEMPLATE!,
+          formRef.current,
+          process.env.NEXT_PUBLIC_SERVICE_KEY
+        );
+        toast.success("Message sent successfully!");
+        reset();
+      } else {
+        toast.error("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast.error("Failed to send message. Please try again later.");
+    }
+
   };
 
   return (
@@ -27,7 +45,7 @@ const ContactForm = () => {
       >
         Want a collaboration?
       </h3>
-      <form
+      <form ref={formRef}
         onSubmit={handleSubmit(onSubmit)}
         className="w-[228px] flex flex-col items-center gap-4"
       >

@@ -4,6 +4,7 @@ import Skills from "@/components/MainPage/Skills/Skills";
 import Portfolio from "@/components/MainPage/Portfolio/Portfolio";
 import Education from "@/components/MainPage/Education/Education";
 import Contact from "@/components/MainPage/Contact/Contact";
+import SocialMedia from "@/components/MainPage/SocialMedia/SocialMedia";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Education />
       <section className="bg-accent rounded-[50px] mt-20 p-4">
         <Contact />
+        <SocialMedia />
       </section>
     </>
   );
