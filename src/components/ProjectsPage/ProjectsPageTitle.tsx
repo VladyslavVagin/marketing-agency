@@ -3,7 +3,7 @@ import { paytoneOne } from "@/app/layout";
 
 const ProjectsPageTitle = () => {
   return (
-    <div className="text-white bg-accent overflow-hidden rounded-b-[50px]">
+    <div className="text-white bg-accent overflow-hidden rounded-b-[50px] relative z-30">
       <div className="px-3.5 py-12">
         <div className="relative">
           <h1

@@ -1,11 +1,13 @@
 import ProjectsPageTitle from "@/components/ProjectsPage/ProjectsPageTitle";
+import ListProjects from "@/components/ProjectsPage/ListProjects/ListProjects";
 
 const PortfolioPage = () => {
   return (
     <section>
-        <ProjectsPageTitle />
+      <ProjectsPageTitle />
+      <ListProjects />
     </section>
-  )
-}
+  );
+};
 
-export default PortfolioPage
+export default PortfolioPage;
