@@ -21,7 +21,7 @@ const ListSolutions = () => {
         alt="Shape for decoration"
         width={176}
         height={176}
-        className="absolute top-0 right-0"
+        className="absolute top-[-40px] right-[-10px]"
       />
     </div>
   );
