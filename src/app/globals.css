@@ -21,3 +21,7 @@ html {
 .title-text {
   @apply text-lg font-normal;
 }
+
+.active {
+  @apply text-accent border border-accent rounded-2xl px-3 py-1;
+}
