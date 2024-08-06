@@ -1,8 +1,10 @@
-import React from 'react'
+import ProjectsPageTitle from "@/components/ProjectsPage/ProjectsPageTitle";
 
 const PortfolioPage = () => {
   return (
-    <div>PortfolioPage</div>
+    <section>
+        <ProjectsPageTitle />
+    </section>
   )
 }
 
