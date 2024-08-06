@@ -8,7 +8,7 @@ const ListProjects = () => {
   return (
     <div className="relative">
       <ul className="flex flex-col items-center gap-4">
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
         <li className="w-[346px] h-[346px] relative z-10 bg-accent rounded-2xl shadow-xl border-2 border-white">
