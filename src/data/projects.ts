@@ -36,6 +36,8 @@ export const projects = [
     liveURL: "https://petlovevv.netlify.app",
     description:
       "An application for searching a new house for pets and for people who looking for a new cute friend in their life. App consist of 6 public pages, 2 private pages (with two sub pages Favorites and Viewed) and pages for login and registration users. The app has a responsive design and is optimized for mobile devices. The app uses REST API for fetching data from the server. User can filter pets by keyword, type, gender, location, category, popularity and price. He/She can add pets to favorites and view them later, contact with owner and create pet card by himself/herself.",
+    details:
+      "Individual frontend project on React and REST APIs. The app has a responsive design and is optimized for mobile devices. The app uses JWT tokens for authentication. User can login and change avatar or user's info. Also when user authorized he can create pet card, add to favourites and contactn with pet's owner. This application has Splash screen also. For DatePicker I use Material UI library, for input-select I use React-Select library. Also there filter for pets by keyword, category, type, location, gender, popularity and price. All images have webp format for optimization. For form validation I use Formik, React-Hook-Form and Yup libraries due to technical requirements. For notifications I use React-toastify library. For fetching data from server I use Axios library. For styling I use Styled-components library. For state management I use Redux Toolkit library. For persisting state I use Redux Persist library. On News page user can read news about animals and filter them by keyword.",
   },
   {
     id: 2,
@@ -68,7 +70,9 @@ export const projects = [
     repositoryURL: "https://github.com/VladyslavVagin/learnlingo",
     liveURL: "https://learnlingovlad.netlify.app/",
     description:
-      "An application for a company that offers the services of language teachers online. After login user can contact with teacher and add him to favorites. User can filter teachers by language, price and level of knowledge. User can also view the teacher's profile and see his/her rating, price, availability, languages, and description. The app has a responsive design and is optimized for mobile devices. The app uses Firebase for authentication and storing data.",
+      "An application for a company that offers the services of language teachers online. After login user can contact with teacher and add him to favorites. User can filter teachers by language, price and level of knowledge. User can also view the teacher's profile and see his/her rating, price, availability, languages, and description.",
+    details:
+      "Individual fullstack project on React and Firebase. The app has a responsive design, is optimized for mobile devices and uses Firebase-Auth and Real-Time DataBase. User can change accent-color and choose what he like. For contact with teacher and/or add to Favorites user should login to app. Web application use CSS-animation, Pagination and Filtering by price, by language and by level.",
   },
   {
     id: 3,
@@ -96,7 +100,9 @@ export const projects = [
     repositoryURL: "https://github.com/VladyslavVagin/ecosolution",
     liveURL: "https://test-ecosol.netlify.app",
     description:
-      "A landing page for a company that offers eco-friendly solutions. The app has a responsive design and is optimized for mobile devices. The app uses React-scroll for smooth scrolling during navigation and Framer-motion for animation.",
+      "A landing page for a company that offers eco-friendly solutions. The app has a responsive design and is optimized for mobile devices.",
+    details:
+      "Individual landing project on React.js. It was Test Task which I passed. This landing use react-scroll library for navigation and framer-motion for animation. This landing has custom slider and form validation. For Form validation I use react-hook-form and Yup library. For styling I use Styled-Components.",
   },
   {
     id: 4,
@@ -128,6 +134,8 @@ export const projects = [
     liveURL: "https://epharmacy-admin.netlify.app",
     description:
       "Admin dashboard for e-pharmacy shops. Admin should login first and after that, he can check all data, create new product, supplier, edit them, delete and filter.",
+    details:
+      "Individual fullstack project on React.js and REST API (Node.js, Express.js, MongoDB). This is admin dashboard for some farmacy with statistic, customers info, suppliers, orders and products. There are filter, pagination and horizontal scroll for tables. For authentification of admin I use JWT-tokens.",
   },
   {
     id: 5,
@@ -151,6 +159,8 @@ export const projects = [
     liveURL: "https://backend-admin-ht2s.onrender.com/api-docs",
     description:
       "Backend for admin e-pharmacy project. Has JWT - authentification with private routes and Swagger documentation.",
+    details:
+      "This backend project is a part of individual fullstack project E-Pharmacy. Backend has routes for get and edit information about customers, products, orders and suppliers. Use bcrypt for hashing the password. For validation of data I use Joi library. For authentification I use JWT-tokens. For documentation I use Swagger. DataBase MongoDB.",
   },
   {
     id: 6,
@@ -182,6 +192,8 @@ export const projects = [
     liveURL: "https://solidariamedia.com",
     description:
       "Application for streaming radio and TV for ONG Remar Spain. Admin can add or delete last videos from YouTube channels of Solidaria Media. Backend and Frontend created with Next.js.",
+    details:
+      "Individual fullstack project on Next.js and MongoDB database. Free design, free structure. This application was created during my internship, specially for ONG REMAR SPAIN for streaming radio and TV. Also there are last videos form Solidaria Media YouTube channels. Admin can add new videos or delete old videos from application. For API I use SSC of Next.js and Credentials Provider.",
   },
   {
     id: 7,
@@ -209,6 +221,8 @@ export const projects = [
     liveURL: "https://druk-army-project-woad.vercel.app/en",
     description:
       "Redesign of the existing website for the volunteer Ukrainian organization DrukArmy.",
+    details:
+      "DrukArmy - is a famous Ukrainian volunteer project. It was Team Frontend project for redesign frontend part of existing web app. We use Next.js for make the best SEO. For styling we use CSS-modules. My sections: Header, Footer, Main page, Terms page, 404 Not Found Page, Loader, Switcher Dark/Light, Internalization with i18next, Mobile menu and all modals on Main page.",
   },
   {
     id: 8,
@@ -245,6 +259,8 @@ export const projects = [
     liveURL: "https://andriiskliar.github.io/drink-code-frontend",
     description:
       "DrinkMaster is a cocktail recipe app. User should register and login first. After he can add cocktails to favorites and create customs drinks. Also user can change avatar and some user information. Mu section: Header, Mobile menu, Switcher dark/light, Navigation, Popular drinks, User menu, Update user modal with form",
+    details:
+      "Team Fullstack Project on React.js and Node.js. The app has a responsive dersign and is optimized for mobile devices. My section: Header, Mobile menu, Switcher Dark/Light, Popular Drinks, User Profile Menu, Modal with Update user form, on Backend routes for Popular drinks, Update user and Swagger documentation for them. We ccreated Backend first and then Frontend part. User can change avatar, create custom drinks, add to Favorites and Remove from favorites. There filtering, pagination and custom cursor. For authentification we use JWT-tokens and Email-verification.",
   },
   {
     id: 9,
@@ -273,6 +289,8 @@ export const projects = [
     liveURL: "https://drink-code-backend.onrender.com/api-docs",
     description:
       "Backend for DrinkMaster project. Has JWT - authentification with private routes and Swagger documentation.",
+    details:
+      "Backend for DrinkMaster team project. My sections on backend was: get Popular Drinks route, update User route ( change avatar, info) and Swagger documentation for these routes.",
   },
   {
     id: 10,
@@ -303,6 +321,8 @@ export const projects = [
     liveURL: "https://vladyslavvagin.github.io/BookShelf_Team_Project",
     description:
       "Bookshelf is a website for book lovers. User can also add books to favorites and view them later. The app uses Firebase for authentication and storing data. My sections: Header, Bestsellers Books, Firebase-authentication, Pagination, Switcher dark/light, Categories list",
+    details:
+      "Team Frontend project on Vanilla JavaScript with Firebase Authentication. My sections were: Bestesellers books, Categories books, Header, Switcher Dark/Light, Mobile menu, Firebase authentication and Delete books from Favorites. For this Team project we use Vite bundler. There are also Pagination and Filtering by categories. For styling we use CSS3. For BookDetails modal we use Simplelightbox library.",
   },
   {
     id: 11,
@@ -330,6 +350,8 @@ export const projects = [
     liveURL: "https://vladyslavvagin.github.io/sport_api",
     description:
       "Application for training exercises. User can filter exercises by category, level, and equipment. User can also view the exercise details and add it to favorites.",
+    details:
+      "Individual frontend project on Vanilla JavaScrip and REST API. User can filter exercises by keyword. User can view exercise details and add it to favorites. For this project I use Parcel bundler. There are Pagination and Filtering by category, level and equipment. For styling I use CSS3.",
   },
   {
     id: 12,
@@ -360,6 +382,8 @@ export const projects = [
     liveURL: "https://vagahotel-manage.vercel.app",
     description:
       "Hotel management system with admin panel in Sanity studio. Admin can add, edit, delete rooms, view bookings, view statistics, and manage users, bookings, rooms, reviews. User can book a room, view booking details, pay for the room, make review of room and check statistics in user menu.",
+    details:
+      "Individual fullstack project on Next.js, TypeScript, Stripe and Tailwind CSS. For admin dashboard I used Sanity Studio. User can login with Google, Github or Credentials and books a room within choosen dates. user can make payment by card, make review and check statistic from User Profile. Also there is a Dark/Light switcher. From Sanity Studio admin can add room, manage room, users, bookings and reviews. Admin can view statistics of bookings and reviews.",
   },
   {
     id: 13,
@@ -378,8 +402,9 @@ export const projects = [
     ],
     repositoryURL: "https://github.com/VladyslavVagin/Team-project",
     liveURL: "https://vladyslavvagin.github.io/Team-project",
-    description:
-      "Landing page of Team project of HTML/CSS course. My sections: Hero, About, Advertisement, Mobile menu, Footer",
+    description: "Landing page for a school of photography Focus.Frame.",
+    details:
+      "Team Landing Project for HTML/CSS course. My sections: Hero, About, Advertisement, Mobile menu, Footer. Semanthic HTML, SVG-sprites, Form validation, Slider, Animation exist in this project. Focus.Frame - is a school of photography.",
   },
   {
     id: 14,
@@ -407,6 +432,8 @@ export const projects = [
     liveURL: "https://vladyslavvagin.github.io/goit-markup-hw-06",
     description:
       "Landing page of Web Studio. Individual project of HTML/CSS course.",
+    details:
+      "Individual project of HTML/CSS course. Have sliders, order form and card's overlay. All project was created with HTML5, CSS3 and JavaScript for modals.",
   },
   {
     id: 15,
@@ -434,5 +461,6 @@ export const projects = [
     liveURL: "https://vladyslavvagin.github.io/simply-choc",
     description:
       "Landing page of Simply Chocolate. Individual project of HTML/CSS course. Have sliders, form review and imitation of shopping cart.",
+    details: "Individual landing project of HTML/CSS course. Have sliders, form review and imitation of shopping cart. All project was created with HTML5, CSS3 and JavaScript for modals, shopping card and animation.",
   },
 ];

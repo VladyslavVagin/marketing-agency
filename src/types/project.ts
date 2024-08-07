@@ -11,5 +11,6 @@ export type Project = {
     repositoryURL: string;
     liveURL: string;
     description: string;
+    details: string;
   };
 };

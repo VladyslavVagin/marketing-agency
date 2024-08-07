@@ -17,6 +17,15 @@ const TitleItem: FC<Props> = ({ title, description, thumbnail }) => {
           <h1 className={`${paytoneOne.className} text-titleMain mb-12`}>
             {title}
           </h1>
+          <div className="w-[180px] h-[180px] mx-auto my-6 shadow-xl p-2 rounded-full relative overflow-hidden flex flex-col items-center justify-center">
+            <Image
+              src={thumbnail}
+              alt={title}
+              layout="fill"
+              objectFit="cover"
+              className="object-cover rounded-full"
+            />
+          </div>
           <p className="title-text">{description}</p>
           <Image
             src="/images/hero/shape.png"
@@ -24,15 +33,6 @@ const TitleItem: FC<Props> = ({ title, description, thumbnail }) => {
             width={176}
             height={176}
             className="absolute top-0 right-[-120px]"
-          />
-        </div>
-        <div className="w-[180px] h-[180px] mx-auto mt-6 shadow-xl p-2 rounded-full relative overflow-hidden flex flex-col items-center justify-center">
-          <Image
-            src={thumbnail}
-            alt={title}
-            layout="fill"
-            objectFit="cover"
-            className="object-cover rounded-full"
           />
         </div>
       </div>
