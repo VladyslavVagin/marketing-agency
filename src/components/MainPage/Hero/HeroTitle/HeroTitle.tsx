@@ -9,7 +9,7 @@ const HeroTitle = () => {
           portfolio
         </p>
         <h1 className={`${paytoneOne.className} font-normal text-titleMain`}>
-          Hello, I'm Vlad Vagin
+          Hello, I&apos;m Vlad Vagin
         </h1>
         <Image
           src="/images/hero/shape.png"

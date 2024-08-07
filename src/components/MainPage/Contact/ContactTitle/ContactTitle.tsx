@@ -7,8 +7,8 @@ const ContactTitle = () => {
       <p className="subtitle">contact</p>
       <h2 className={`${paytoneOne.className} relative z-10 title`}>Get In Touch</h2>
       <p className="title-text mt-9 mb-12">
-        If you're interested in collaborating, feel free to reach out using this
-        form. I'm always open to discussing new projects, creative ideas, or
+        If you&apos;re interested in collaborating, feel free to reach out using this
+        form. I&apos;m always open to discussing new projects, creative ideas, or
         opportunities to be part of your visions.
       </p>
       <Image

@@ -10,7 +10,7 @@ const SkillsTitle = () => {
       </h2>
       <p className="title-text">
         I specialize in JavaScript, TypeScript, React, Next and have experience
-        with backend development using Node.js. I'm also proficient in using
+        with backend development using Node.js. I&apos;m also proficient in using
         various development tools such as npm and Git, Redux and Firebase. My
         focus is on writing clean, efficient, and maintainable code.
       </p>
