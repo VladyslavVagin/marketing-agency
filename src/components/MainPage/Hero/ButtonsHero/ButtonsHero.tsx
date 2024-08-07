@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ButtonsHero = () => {
   return (
-    <div className="flex items-center justify-center gap-1.5">
+    <div className="flex items-center justify-center gap-1.5 md:justify-start relative z-10">
       <Link href="#about" className="btn-link text-black bg-white">
         About
       </Link>

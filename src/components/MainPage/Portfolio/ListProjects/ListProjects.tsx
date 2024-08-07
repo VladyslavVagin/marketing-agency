@@ -7,11 +7,11 @@ import CardProject from "../CardProject/CardProject";
 const ListProjects = () => {
   return (
     <div className="relative">
-      <ul className="flex flex-col items-center gap-4">
+      <ul className="flex flex-col items-center justify-center gap-4 md:flex-row md:flex-wrap md:gap-6">
         {projects.slice(0, 3).map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
-        <li className="w-[346px] h-[346px] relative z-10 bg-accent rounded-2xl shadow-xl border-2 border-white">
+        <li className="w-[346px] h-[346px] relative z-10 bg-accent rounded-2xl shadow-xl border-2 border-white md:w-[300px] md:h-[300px]">
           <Link
             href={"/portfolio"}
             className={`w-full h-full flex items-center justify-center text-white ${paytoneOne.className} text-logo`}

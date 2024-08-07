@@ -39,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl">
+    <div className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl mx-auto">
       <h3
         className={`${paytoneOne.className} text-2xl text-black font-normal mb-4`}
       >

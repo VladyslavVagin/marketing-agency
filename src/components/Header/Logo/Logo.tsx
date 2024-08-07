@@ -6,7 +6,7 @@ const Logo = () => {
     <div>
       <Link
         href={"/"}
-        className={`inline-block ${paytoneOne.className} text-logo text-white font-normal`}
+        className={`inline-block ${paytoneOne.className} text-logo text-white font-normal md:text-6xl`}
       >
         VV
       </Link>

@@ -9,7 +9,7 @@ import Slider from "@/components/Slider/Slider";
 const ListSolutions = () => {
   return (
     <div className="relative mt-14">
-      <Slider className="flex flex-col items-center gap-4 max-w-[370px]">
+      <Slider className="flex flex-col items-center gap-4 max-w-[370px] md:max-w-[768px]">
         {solutions.map((solution, index) => (
           <SwiperSlide key={index}>
             <CardExpertise solution={solution} />

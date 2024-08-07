@@ -8,7 +8,7 @@ const CardProject: FC<Project> = ({ project }) => {
   const { path, title, thumbnail } = project;
 
   return (
-    <li className="w-[346px] h-[346px] relative rounded-2xl shadow-xl border-2 border-white">
+    <li className="w-[346px] h-[346px] relative rounded-2xl shadow-xl border-2 border-white md:w-[300px] md:h-[300px]">
       <Link href={`/portfolio/${path}`} className="w-full h-full">
         <Image
           src={thumbnail}

@@ -11,15 +11,15 @@ html {
 }
 
 .subtitle {
-  @apply uppercase text-2xl font-light mb-4;
+  @apply uppercase text-2xl font-light mb-4 md:text-3xl;
 }
 
 .title {
-  @apply text-4xl font-normal;
+  @apply text-4xl font-normal md:text-5xl;
 }
 
 .title-text {
-  @apply text-lg font-normal;
+  @apply text-lg font-normal md:text-xl;
 }
 
 .active {
