@@ -1,7 +1,13 @@
+import { FC, Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 import { paytoneOne } from "@/app/layout";
 
-const ProjectsPageTitle = () => {
+type Props = {
+  category: string;
+  setCategory: Dispatch<SetStateAction<string>>;
+};
+
+const ProjectsPageTitle: FC<Props> = ({ setCategory, category }) => {
   return (
     <div className="text-white bg-accent overflow-hidden rounded-b-[50px] relative z-30">
       <div className="px-3.5 py-12">
@@ -26,28 +32,78 @@ const ProjectsPageTitle = () => {
         </div>
         <div className="mt-10 mb-6">
           <ul className="flex flex-wrap gap-2 items-center justify-center">
-            <li className="border border-black text-black font-bold w-[100px] h-12 flex items-center justify-center rounded-xl bg-yellowIcon">
-              <button type="button" className="w-full h-full">
+            <li
+              className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
+                category === "all"
+                  ? "bg-accent text-white border-white"
+                  : "bg-yellowIcon text-black border-black"
+              }`}
+            >
+              <button
+                type="button"
+                className="w-full h-full"
+                onClick={() => setCategory("all")}
+              >
                 All
               </button>
             </li>
-            <li className="border border-black text-black font-bold w-[100px] h-12 flex items-center justify-center rounded-xl bg-yellowIcon">
-              <button type="button" className="w-full h-full">
+            <li
+              className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
+                category === "landing"
+                  ? "bg-accent text-white border-white"
+                  : "bg-yellowIcon text-black border-black"
+              }`}
+            >
+              <button
+                type="button"
+                className="w-full h-full"
+                onClick={() => setCategory("landing")}
+              >
                 Landing
               </button>
             </li>
-            <li className="border border-black text-black font-bold w-[100px] h-12 flex items-center justify-center rounded-xl bg-yellowIcon">
-              <button type="button" className="w-full h-full">
+            <li
+              className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
+                category === "frontend"
+                  ? "bg-accent text-white border-white"
+                  : "bg-yellowIcon text-black border-black"
+              }`}
+            >
+              <button
+                type="button"
+                className="w-full h-full"
+                onClick={() => setCategory("frontend")}
+              >
                 Frontend
               </button>
             </li>
-            <li className="border border-black text-black font-bold w-[100px] h-12 flex items-center justify-center rounded-xl bg-yellowIcon">
-              <button type="button" className="w-full h-full">
+            <li
+              className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
+                category === "backend"
+                  ? "bg-accent text-white border-white"
+                  : "bg-yellowIcon text-black border-black"
+              }`}
+            >
+              <button
+                type="button"
+                className="w-full h-full"
+                onClick={() => setCategory("backend")}
+              >
                 Backend
               </button>
             </li>
-            <li className="border border-black text-black font-bold w-[100px] h-12 flex items-center justify-center rounded-xl bg-yellowIcon">
-              <button type="button" className="w-full h-full">
+            <li
+              className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
+                category === "fullstack"
+                  ? "bg-accent text-white border-white"
+                  : "bg-yellowIcon text-black border-black"
+              }`}
+            >
+              <button
+                type="button"
+                className="w-full h-full"
+                onClick={() => setCategory("fullstack")}
+              >
                 Fullstack
               </button>
             </li>
