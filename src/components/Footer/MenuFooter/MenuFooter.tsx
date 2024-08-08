@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MenuFooter = () => {
   return (
-    <nav className="my-14">
+    <nav className="my-14 md:my-0">
       <ul className="flex flex-col items-start gap-2">
         <li>
           <Link

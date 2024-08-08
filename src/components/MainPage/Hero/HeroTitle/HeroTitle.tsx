@@ -3,7 +3,7 @@ import { paytoneOne } from "@/app/layout";
 
 const HeroTitle = () => {
   return (
-    <div className="text-white text-left mt-6 mb-10 max-w-[60%]">
+    <div className="text-white text-left mt-6 mb-10 md:max-w-[60%]">
       <div className="relative mb-8">
         <p className="uppercase text-2xl font-light mb-5 md:text-3xl">
           portfolio
