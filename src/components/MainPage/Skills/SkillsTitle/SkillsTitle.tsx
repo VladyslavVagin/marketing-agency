@@ -3,7 +3,7 @@ import { paytoneOne } from "@/app/layout";
 
 const SkillsTitle = () => {
   return (
-    <div className="relative">
+    <div className="relative xl:w-[370px]">
       <p className="subtitle mb-4">my skills</p>
       <h2 className={`title mb-9 ${paytoneOne.className} relative z-20`}>
         Frontend, Backend and Software

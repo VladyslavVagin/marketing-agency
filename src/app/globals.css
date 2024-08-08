@@ -7,7 +7,7 @@ html {
 }
 
 .btn-link {
-  @apply w-[170px] h-12 rounded-xl font-bold text-base flex items-center justify-center;
+  @apply w-[170px] h-12 rounded-xl font-bold text-base flex items-center justify-center transition-all duration-500 xl:hover:bg-yellowIcon xl:hover:text-black;
 }
 
 .subtitle {
@@ -15,7 +15,7 @@ html {
 }
 
 .title {
-  @apply text-4xl font-normal md:text-5xl;
+  @apply text-4xl font-normal md:text-5xl xl:text-titleMain;
 }
 
 .title-text {
@@ -24,4 +24,8 @@ html {
 
 .active {
   @apply text-accent border border-accent rounded-2xl px-3 py-1;
+}
+
+.activeNav {
+  @apply text-white border-b-white;
 }

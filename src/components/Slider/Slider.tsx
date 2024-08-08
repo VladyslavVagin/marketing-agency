@@ -14,14 +14,15 @@ type Props = {
 };
 
 const Slider: FC<Props> = ({ children, className }) => {
-  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279.99 });
+  const isDesktop = useMediaQuery({minWidth: 1280});
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={isTablet ? 2 : 1}
+      spaceBetween={isDesktop ? 20 : 50}
+      slidesPerView={isTablet ? 2 : (isDesktop ? 3 : 1)}
       autoplay={{
         delay: 5000,
         stopOnLastSlide: false,
@@ -40,10 +41,10 @@ const Slider: FC<Props> = ({ children, className }) => {
       className={className}
     >
       {children}
-      <div ref={navigationPrevRef} className="absolute bottom-[50%] left-4 z-20">
+      <div ref={navigationPrevRef} className="absolute bottom-[50%] left-4 z-20 xl:hidden">
         <IoIosArrowDropleft className="w-12 h-12 fill-black" />
       </div>
-      <div ref={navigationNextRef} className="absolute bottom-[50%] right-4 z-20">
+      <div ref={navigationNextRef} className="absolute bottom-[50%] right-4 z-20 xl:hidden">
         <IoIosArrowDropright className="w-12 h-12 fill-black" />
       </div>
     </Swiper>

@@ -24,16 +24,16 @@ const config: Config = {
         titleMain: ["56px", "64px"],
       },
       transformOrigin: {
-        '50': '50% 50%',
+        "50": "50% 50%",
       },
       keyframes: {
-        'stroke-offset': {
-          '0%': { strokeDashoffset: '100' },
-          '100%': { strokeDashoffset: '0' },
+        "stroke-offset": {
+          "0%": { strokeDashoffset: "100" },
+          "100%": { strokeDashoffset: "0" },
         },
       },
       animation: {
-        'stroke-offset': 'stroke-offset 0.35s linear',
+        "stroke-offset": "stroke-offset 0.35s linear",
       },
     },
   },

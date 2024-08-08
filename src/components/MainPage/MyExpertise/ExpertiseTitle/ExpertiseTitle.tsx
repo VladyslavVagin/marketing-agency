@@ -4,11 +4,11 @@ const ExpertiseTitle = () => {
   return (
     <div>
       <p className="subtitle">my expertise</p>
-      <div className="flex flex-col items-start gap-5">
-        <h2 className={`${paytoneOne.className} title`}>
+      <div className="flex flex-col items-start gap-5 xl:flex-row xl:justify-between">
+        <h2 className={`${paytoneOne.className} title xl:w-[320px]`}>
           Innovative Solutions
         </h2>
-        <p className="title-text">
+        <p className="title-text xl:w-[470px]">
           I specialize in creating dynamic and beautiful web pages and
           applications. I have extensive experience in developing REST APIs,
           implementing SEO and Accesibility best practices. My goal is to create
