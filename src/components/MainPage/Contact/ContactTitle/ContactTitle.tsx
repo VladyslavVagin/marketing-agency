@@ -3,7 +3,7 @@ import { paytoneOne } from "@/app/layout";
 
 const ContactTitle = () => {
   return (
-    <div className="relative md:w-[50%]">
+    <div className="relative md:w-[50%] xl:w-[40%]">
       <p className="subtitle">contact</p>
       <h2 className={`${paytoneOne.className} relative z-10 title`}>Get In Touch</h2>
       <p className="title-text mt-9 mb-12">

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { contactSchema } from "@/schemas/schemas";
 import { paytoneOne } from "@/app/layout";
@@ -35,19 +35,19 @@ const ContactForm = () => {
       console.error("Error sending message:", error);
       toast.error("Failed to send message. Please try again later.");
     }
-
   };
 
   return (
-    <div className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl mx-auto">
+    <div className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl mx-auto xl:w-[470px]">
       <h3
         className={`${paytoneOne.className} text-2xl text-black font-normal mb-4`}
       >
         Want a collaboration?
       </h3>
-      <form ref={formRef}
+      <form
+        ref={formRef}
         onSubmit={handleSubmit(onSubmit)}
-        className="w-[228px] flex flex-col items-center gap-4"
+        className="w-[228px] flex flex-col items-center gap-4 xl:w-[400px]"
       >
         <label className="w-full">
           <input
@@ -89,7 +89,8 @@ const ContactForm = () => {
         </label>
         <button
           type="submit"
-          className="w-full h-12 rounded-xl bg-accent outline-none text-white text-base font-bold"
+          aria-label="Submit form and send message"
+          className="w-full h-12 rounded-xl bg-accent outline-none text-white text-base font-bold transition-colors duration-500 xl:hover:bg-yellowIcon xl:hover:text-black"
         >
           Submit
         </button>

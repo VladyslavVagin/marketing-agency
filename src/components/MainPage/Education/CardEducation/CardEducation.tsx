@@ -14,7 +14,7 @@ const CardEducation: FC<Props> = ({ education }) => {
   const { year, title, description, id } = education;
 
   return (
-    <li className="max-w-[346px] md:max-w-[768px]">
+    <li className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
       <div className="flex items-center justify-start gap-3">
         <div
           className={`w-12 h-12 rounded-xl ${
@@ -29,8 +29,8 @@ const CardEducation: FC<Props> = ({ education }) => {
         </div>
         <span className={`${paytoneOne.className} text-logo`}>{year}</span>
       </div>
-      <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px]">
-        <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px]">
+      <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+        <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
           <h3 className="text-2xl font-normal mb-5">{title}</h3>
           <p className="text-lg font-light text-gray-500">{description}</p>
         </div>

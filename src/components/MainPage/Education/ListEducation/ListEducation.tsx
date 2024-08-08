@@ -5,7 +5,7 @@ import CardEducation from "../CardEducation/CardEducation";
 const ListEducation = () => {
   return (
     <div className="mt-16 relative">
-      <ul className="flex flex-col items-center gap-4">
+      <ul className="flex flex-col items-center gap-4 w-full">
         {educations.map((education) => (
           <CardEducation key={education.id} education={education} />
         ))}
