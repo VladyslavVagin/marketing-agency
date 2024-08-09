@@ -6,7 +6,7 @@ import { Project } from "@/types/project";
 
 const ProjectCard: FC<Project> = ({ project }) => {
   return (
-    <li className="w-[300px] h-[300px] bg-yellowIcon shadow-xl p-2 rounded-lg relative overflow-hidden border-4 border-accent flex flex-col items-center justify-center">
+    <li className="w-[300px] h-[300px] bg-accent shadow-xl p-2 rounded-lg relative overflow-hidden border-4 border-accent flex flex-col items-center justify-center">
       <Image
         src={project.thumbnail}
         alt={project.title}
@@ -17,7 +17,7 @@ const ProjectCard: FC<Project> = ({ project }) => {
       <span className="absolute top-2 right-2 p-1 bg-slate-700 text-white rounded-lg">
         {project.category}
       </span>
-      <h2 className={`${paytoneOne.className} title text-white relative z-20`}>
+      <h2 className={`${paytoneOne.className} text-4xl text-white relative z-20 text-center`}>
         {project.title}
       </h2>
       <Link

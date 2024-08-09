@@ -11,7 +11,7 @@ const SocialMedia = () => {
           <Link
             href={"https://www.linkedin.com/in/vladyslav-vagin-devfrontend"}
             target="_blank"
-            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30"
+            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30 transition-colors duration-500 xl:hover:bg-black"
           >
             <FaLinkedinIn className="w-4 h-4 fill-white md:w-8 md:h-8" />
           </Link>
@@ -20,7 +20,7 @@ const SocialMedia = () => {
           <Link
             href={"https://github.com/VladyslavVagin"}
             target="_blank"
-            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30"
+            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30 transition-colors duration-500 xl:hover:bg-black"
           >
             <BsGithub className="w-4 h-4 fill-white md:w-8 md:h-8" />
           </Link>
@@ -29,7 +29,7 @@ const SocialMedia = () => {
           <Link
             href={"https://t.me/Go_koFunikular"}
             target="_blank"
-            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30"
+            className="flex items-center justify-center w-full h-full bg-primary rounded-full border border-white border-opacity-30 transition-colors duration-500 xl:hover:bg-black"
           >
             <FaTelegramPlane className="w-4 h-4 fill-white md:w-8 md:h-8" />
           </Link>

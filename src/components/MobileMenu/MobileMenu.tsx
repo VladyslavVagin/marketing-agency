@@ -12,7 +12,7 @@ const MobileMenu: FC<Props> = ({ setIsOpen }) => {
 
   return (
     <div className="fixed z-[60] top-0 left-0 w-screen h-screen bg-black bg-opacity-40">
-      <div className="absolute z-[61] top-0 right-0 w-[300px] min-h-screen bg-white">
+      <div className="absolute z-[61] top-0 right-0 w-[300px] min-h-screen bg-gray-300">
         <button
           type="button"
           className="absolute top-4 right-4"
@@ -20,7 +20,7 @@ const MobileMenu: FC<Props> = ({ setIsOpen }) => {
         >
           <IoClose className="fill-black w-9 h-9" />
         </button>
-        <ul className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-6 text-xl">
+        <ul className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-6 text-2xl font-semibold">
           <li>
             <Link href="/" aria-label="Go to Main page" className={`${path === '/' ? 'active' : ''}`}>
               Main

@@ -36,7 +36,7 @@ const ListProjects: FC<Props> = ({ category }) => {
 
   return (
     <div className="px-3.5 bg-white py-20 relative z-20 rounded-b-[50px] mt-[-50px]">
-      <ul className="flex flex-col items-center gap-4">
+      <ul className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center md:min-h-[600px]">
         {visibleProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
