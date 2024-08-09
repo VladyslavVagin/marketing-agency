@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { paytoneOne } from "@/app/layout";
 
@@ -13,8 +14,8 @@ const Information = () => {
           </div>
           <span className={`${paytoneOne.className} text-logo`}>Skills</span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-yellowIcon w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-yellowIcon w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <h3 className="subtitle">Tech. skills:</h3>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               HTML5, CSS3, JavaScript, TypeScript, React.js, Redux, Redux
@@ -36,13 +37,13 @@ const Information = () => {
               Pixel Perfect, SEO optimization, Accessibility, SCRUM, Agile,
               JWT-authentication, Animation, REST API.
             </p>
-            <div className="relative w-full h-52 mt-6">
+            <div className="relative w-full h-40 mt-6">
               <Image
                 src="/images/about/banner.webp"
                 alt="Banner from LinkedIn"
                 layout="fill"
-                objectFit="cover"
-                className="rounded-2xl shadow-lg shadow-white"
+                objectFit="contain"
+                className="rounded-2xl"
               />
             </div>
           </div>
@@ -60,8 +61,8 @@ const Information = () => {
             Seaman Life
           </span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               From 2008 to 2014 I was a student at Odessa National Maritime
               Academy ( now called National University Odessa Maritime Academy)
@@ -76,6 +77,14 @@ const Information = () => {
               this position and thought about new opportunities in my life like
               Web Development.
             </p>
+            <div className="w-48 h-48 rounded-full relative mx-auto mt-4">
+              <Image
+                src="/images/about/onma.webp"
+                alt="Symbol of National University Odessa National Maritime Academy"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -91,8 +100,8 @@ const Information = () => {
             GoIT School
           </span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               After start war in Ukraine, I relocated to Spain with family and
               started to learn Web Development. I get my first certificate in
@@ -116,6 +125,36 @@ const Information = () => {
               customise input for all types of browser and how work with hard
               layout.
             </p>
+            <div className="flex items-center justify-center gap-2 flex-wrap mt-4 md:gap-8">
+              <Image
+                src="/images/about/page1.webp"
+                alt="Fullstack Web Developer Certificate first page"
+                width={140}
+                height={200}
+                className="md:w-44 md:h-60"
+              />
+              <Image
+                src="/images/about/page2.webp"
+                alt="Fullstack Web Developer Certificate second page"
+                width={140}
+                height={200}
+                className="md:w-44 md:h-60"
+              />
+              <Image
+                src="/images/about/page3.webp"
+                alt="Fullstack Web Developer Certificate third page"
+                width={140}
+                height={200}
+                className="md:w-44 md:h-60"
+              />
+              <Image
+                src="/images/about/page4.webp"
+                alt="Fullstack Web Developer Certificate fourth page"
+                width={140}
+                height={200}
+                className="md:w-44 md:h-60"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -131,8 +170,8 @@ const Information = () => {
             CRN Getafe
           </span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               After my relocation to Spain, I started learn Spanish, and started
               course Web Page Development and Publishing in Center of Education
@@ -168,8 +207,8 @@ const Information = () => {
             Search Job
           </span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               After completion courses in GoIT and CRN Getafe, I continued to
               learn new technologies and improve my skills. I learned React
@@ -199,8 +238,8 @@ const Information = () => {
           </div>
           <span className={`${paytoneOne.className} text-logo`}>My Hobby</span>
         </div>
-        <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
+          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
               My main hobby, of course, its coding. But, also, I like a lot
               hiking and playing the guitar. I like to spend time in the nature,
