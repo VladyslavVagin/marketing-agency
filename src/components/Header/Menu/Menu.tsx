@@ -7,7 +7,7 @@ const Menu = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-center gap-12 text-2xl text-white mr-[40%]">
+    <div className="flex items-center justify-center gap-12 text-2xl text-white mr-[40%] xl:mr-[10%]">
       <Link
         href={"/"}
         className={`${
