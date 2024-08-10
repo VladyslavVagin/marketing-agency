@@ -1,5 +1,21 @@
 {
     "HomePage": {
-      "title": "Hola, soy Vlad Vagin"
+      "heroSubtitle":"portafolio",
+      "title": "Hola, soy Vlad Vagin",
+      "textHero":"Desarrollador web frontend y MERN-stack especializado en HTML5/CSS3, JavaScript, React.js, Next.js, TypeScript, Node.js, bases de datos NoSQL/SQL, APIs REST y WordPress.",
+      "btnAbout":"Sobre mi",
+      "btnDownload":"Descargar CV",
+      "expertise":"Mi especialidad",
+      "solutions":"Soluciones Innovadoras",
+      "textExpertise":"Me especializo en crear páginas web y aplicaciones dinámicas y atractivas. Tengo amplia experiencia en el desarrollo de APIs REST, implementando las mejores prácticas de SEO y accesibilidad. Mi objetivo es crear soluciones eficientes, escalables y fáciles de usar que satisfagan las necesidades de los usuarios.",
+      "webpages":"Sitios Web",
+      "textWebpages":"Implica crear páginas individuales que proporcionen información, entretenimiento o funcionalidad de comercio electrónico. Me aseguro de que estas páginas estén bien diseñadas, sean responsivas y estén optimizadas para motores de búsqueda.",
+      "textWebapps":"Se trata de crear aplicaciones que se ejecutan en un servidor web y a las que los usuarios pueden acceder a través de un navegador web. Me especializo en crear aplicaciones web dinámicas, responsivas y fáciles de usar utilizando tecnologías modernas como JavaScript, TypeScript, React y Next.",
+      "textRestApis":"Crear interfaces que permiten a diferentes aplicaciones de software comunicarse e intercambiar datos. Tengo experiencia en el diseño e implementación de APIs REST seguras, eficientes y escalables con Node.js"
+    },
+    "Header": {
+      "main": "Principal",
+      "about": "Sobre mi",
+      "projects": "Proyectos"
     }
   }

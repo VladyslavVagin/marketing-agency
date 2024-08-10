@@ -1,20 +1,19 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { paytoneOne } from "@/app/[locale]/layout";
 
 const ExpertiseTitle = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <div>
-      <p className="subtitle">my expertise</p>
+      <p className="subtitle">{t("expertise")}</p>
       <div className="flex flex-col items-start gap-5 xl:flex-row xl:justify-between">
         <h2 className={`${paytoneOne.className} title xl:w-[320px]`}>
-          Innovative Solutions
+          {t("solutions")}
         </h2>
-        <p className="title-text xl:w-[470px]">
-          I specialize in creating dynamic and beautiful web pages and
-          applications. I have extensive experience in developing REST APIs,
-          implementing SEO and Accesibility best practices. My goal is to create
-          efficient, scalable, and user-friendly solutions that meet the needs
-          of users.
-        </p>
+        <p className="title-text xl:w-[470px]">{t("textExpertise")}</p>
       </div>
     </div>
   );

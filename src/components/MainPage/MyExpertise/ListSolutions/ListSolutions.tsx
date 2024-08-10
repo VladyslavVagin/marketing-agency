@@ -1,12 +1,34 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { SwiperSlide } from "swiper/react";
-import { solutions } from "@/data/solutions";
+import { FaLaptopCode, FaSitemap } from "react-icons/fa";
+import { AiFillApi } from "react-icons/ai";
 import CardExpertise from "../CardExpertise/CardExpertise";
 import Slider from "@/components/Slider/Slider";
 
 const ListSolutions = () => {
+  const t = useTranslations("HomePage");
+
+  const solutions = [
+    {
+      Icon: FaLaptopCode,
+      title: "Web App",
+      description: t("textWebapps"),
+    },
+    {
+      Icon: FaSitemap,
+      title: t("webpages"),
+      description: t("textWebpages"),
+    },
+    {
+      Icon: AiFillApi,
+      title: "REST APIs",
+      description: t("textRestApis"),
+    },
+  ];
+
   return (
     <div className="relative mt-14">
       <Slider className="flex flex-col items-center gap-4 max-w-[370px] md:max-w-[768px] xl:max-w-[1280px]">
