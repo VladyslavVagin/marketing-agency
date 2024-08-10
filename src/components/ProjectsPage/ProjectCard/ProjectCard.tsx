@@ -3,12 +3,13 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
 const ProjectCard: FC<Project> = ({ project }) => {
   const currentLocale = useLocale();
+  const t = useTranslations("Projects");
 
   return (
     <li className="w-[300px] h-[300px] bg-accent shadow-xl p-2 rounded-lg relative overflow-hidden border-4 border-accent flex flex-col items-center justify-center">
@@ -29,10 +30,10 @@ const ProjectCard: FC<Project> = ({ project }) => {
       </h2>
       <Link
         href={`/${currentLocale}/portfolio/${project.path}`}
-        aria-label={`Go to details of project ${project.title}`}
+        aria-label={`${t("btnAriaLabel")} ${project.title}`}
         className="relative z-30 mt-8 bg-accent px-3 py-1 rounded-xl text-white text-xl font-semibold"
       >
-        See Details
+        {t("seeDetails")}
       </Link>
     </li>
   );

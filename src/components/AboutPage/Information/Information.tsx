@@ -87,59 +87,45 @@ const Information = () => {
             ></span>
           </div>
           <span className={`${paytoneOne.className} text-logo`}>
-            GoIT School
+            {t("goit")}
           </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              After start war in Ukraine, I relocated to Spain with family and
-              started to learn Web Development. I get my first certificate in
-              March 2023 and it was AWS Cloud Practitioner Certificate.
+              {t("goitText1")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              After that, I commenced a 10-months course Fullstack Web Developer
-              in GoIT school. During this course I learned HTML5, CSS3,
-              JavaScript, React.js, Redux, TypeScript, Node.js. The most
-              important thing, that we learned the best practices of coding and
-              must modern technologies. I participated in team projects and have
-              numerous individual projects. On our team projects we use Trello,
-              Jira, GitHub and Figma for design. It was so great experience that
-              10-months course I completed in 6 months.
+              {t("goitText2")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              Also, during my education I participated in DrukArmy team project.
-              We update the frontend part of existing project by using Next.js.
-              It was very useful experience, because I started work with
-              Next.js, learned how to implement i18next for localization, how
-              customise input for all types of browser and how work with hard
-              layout.
+              {t("goitText3")}
             </p>
             <div className="flex items-center justify-center gap-2 flex-wrap mt-4 md:gap-8">
               <Image
                 src="/images/about/page1.webp"
-                alt="Fullstack Web Developer Certificate first page"
+                alt={t("certPage1")}
                 width={140}
                 height={200}
                 className="md:w-44 md:h-60"
               />
               <Image
                 src="/images/about/page2.webp"
-                alt="Fullstack Web Developer Certificate second page"
+                alt={t("certPage2")}
                 width={140}
                 height={200}
                 className="md:w-44 md:h-60"
               />
               <Image
                 src="/images/about/page3.webp"
-                alt="Fullstack Web Developer Certificate third page"
+                alt={t("certPage3")}
                 width={140}
                 height={200}
                 className="md:w-44 md:h-60"
               />
               <Image
                 src="/images/about/page4.webp"
-                alt="Fullstack Web Developer Certificate fourth page"
+                alt={t("certPage4")}
                 width={140}
                 height={200}
                 className="md:w-44 md:h-60"
@@ -157,30 +143,19 @@ const Information = () => {
             ></span>
           </div>
           <span className={`${paytoneOne.className} text-logo`}>
-            CRN Getafe
+            {t("getafe")}
           </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              After my relocation to Spain, I started learn Spanish, and started
-              course Web Page Development and Publishing in Center of Education
-              in Getafe. During this course I learned HTML5, CSS3, JavaScript,
-              JQuery, Boostrap, WordPress ( Elementor, WooCommerce), SEO
-              optimization and Accessibility. After completion of this course I
-              have got 80 hours (3 weeks) internship in ONG Remar Spain.
+              {t("getafeText1")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              The first time I worked with WordPress, optimized website for SEO,
-              fixed CSS and JS bugs. When my tutor saw that I can create web
-              applications, he ask me to create a web application for Solidaria
-              Media. I choose Next.js for this project. I created this app for
-              streaming radio and TV with admin dashboard. Admin can manage
-              YouTube videos in this application, add or delete them.
+              {t("getafeText2")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              After successful completion of this internship, I obtained a
-              proffesional certificate and Medium Grade in Spain.
+              {t("getafeText3")}
             </p>
           </div>
         </div>
@@ -194,26 +169,16 @@ const Information = () => {
             ></span>
           </div>
           <span className={`${paytoneOne.className} text-logo`}>
-            Search Job
+            {t("searchJob")}
           </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              After completion courses in GoIT and CRN Getafe, I continued to
-              learn new technologies and improve my skills. I learned React
-              Native, SQL databases, Sanity and Stripe integrations, improve
-              TypeScript and for this moment I am learning AI in Web
-              Development. My education will never stop, even if I get a job.
+              {t("searchJobText1")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              Due to above mentioned, I am looking for a job as a Junior (Strong
-              Junior) Web Developer. I am ready to work in a team, learn new and
-              improve my skills. I am looking for a company where I can grow and
-              develop my skills. I am looking for a company where I can be a
-              part of a team, work on interesting projects and I am interesting
-              in long term cooperation. Also, I am ready to relocate to any city
-              within Spain.
+              {t("searchJobText2")}
             </p>
           </div>
         </div>
@@ -226,22 +191,20 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>My Hobby</span>
+          <span className={`${paytoneOne.className} text-logo`}>
+            {t("hobby")}
+          </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              My main hobby, of course, its coding. But, also, I like a lot
-              hiking and playing the guitar. I like to spend time in the nature,
-              far from the city noise. I like to play the guitar, I have been
-              playing the guitar more than 10 years. I like to play the guitar,
-              because it helps me to relax and forget about all problems.
+              {t("hobbyText")}
             </p>
             <div className="mt-4 flex flex-col items-center justify-center gap-3 md:flex-row">
               <div className="w-full h-28 relative md:w-[40%] xl:h-40">
                 <Image
                   src="/images/about/foto1.webp"
-                  alt="I am in the Guadarrama mountains"
+                  alt={t("hobbyPhotoAlt")}
                   layout="fill"
                   objectFit="cover"
                   className="rounded-2xl"
@@ -250,7 +213,7 @@ const Information = () => {
               <div className="w-full h-28 relative md:w-[40%] xl:h-40">
                 <Image
                   src="/images/about/foto2.webp"
-                  alt="I am in the Guadarrama mountains"
+                  alt={t("hobbyPhotoAlt")}
                   layout="fill"
                   objectFit="cover"
                   className="rounded-2xl"
