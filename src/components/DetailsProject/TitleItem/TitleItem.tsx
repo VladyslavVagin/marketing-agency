@@ -1,4 +1,7 @@
+"use client";
+
 import { FC } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { paytoneOne } from "@/app/[locale]/layout";
 
@@ -9,18 +12,22 @@ type Props = {
 };
 
 const TitleItem: FC<Props> = ({ title, description, thumbnail }) => {
+  const t = useTranslations("Projects");
+
   return (
     <div className="text-white bg-accent overflow-hidden rounded-b-[50px] relative z-30">
       <div className="px-3.5 py-12 relative max-w-[425px] mx-auto md:max-w-[800px] md:px-9 xl:max-w-[1280px] xl:px-[135px]">
         <div className="relative md:max-w-[45%] xl:max-w-[55%]">
-          <p className="subtitle">Details</p>
-          <h1 className={`${paytoneOne.className} text-titleMain mb-12 xl:text-7xl`}>
+          <p className="subtitle">{t("details")}</p>
+          <h1
+            className={`${paytoneOne.className} text-titleMain mb-12 xl:text-7xl`}
+          >
             {title}
           </h1>
           <p className="title-text md:min-h-48">{description}</p>
           <Image
             src="/images/hero/shape.png"
-            alt="Shape for hero section"
+            alt={t("shape")}
             width={176}
             height={176}
             className="absolute top-0 right-[-120px]"

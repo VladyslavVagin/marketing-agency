@@ -11,7 +11,7 @@ const SkillsTitle = () => {
     <div className="relative xl:w-[370px]">
       <p className="subtitle mb-4">{t("skills")}</p>
       <h2 className={`title mb-9 ${paytoneOne.className} relative z-20`}>
-        Frontend, Backend and Software
+        {t("whatSkills")}
       </h2>
       <p className="title-text">{t("textSkills")}</p>
       <Image
