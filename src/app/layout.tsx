@@ -1,28 +1,10 @@
-import { Montserrat, Paytone_One } from "next/font/google";
-import "./globals.css";
-import Toast from "@/components/Toast/Toast";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-montserrat",
-});
-
-export const paytoneOne = Paytone_One({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-paytone-one",
-});
-
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default async function RootLayout({
+  children,
+}: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <head>
@@ -39,12 +21,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${montserrat.className}`}>
-        <Header />
-        <main className="bg-[#e3e3e3] min-h-screen">{children}</main>
-        <Footer />
-        <Toast />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

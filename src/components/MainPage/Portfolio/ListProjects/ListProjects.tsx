@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 import { projects } from "@/data/projects";
 import CardProject from "../CardProject/CardProject";
 

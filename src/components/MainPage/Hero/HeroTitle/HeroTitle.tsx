@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import { paytoneOne } from "@/app/layout";
+import { useTranslations } from "next-intl";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const HeroTitle = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <div className="text-white text-left mt-6 mb-10 md:max-w-[60%] xl:max-w-[470px]">
       <div className="relative mb-8">
@@ -9,7 +14,7 @@ const HeroTitle = () => {
           portfolio
         </p>
         <h1 className={`${paytoneOne.className} font-normal text-7xl`}>
-          Hello, I&apos;m Vlad Vagin
+          {t("title")}
         </h1>
         <Image
           src="/images/hero/shape.png"
@@ -20,8 +25,9 @@ const HeroTitle = () => {
         />
       </div>
       <p className="title-text text-justify">
-        Frontend and MERN-stack Web Developer who specialize in HTML5/CSS3, JavaScript,
-        React.js, Next.js, TypeScript, Node.js, NoSQL/SQL databases, REST APIs and WordPress.
+        Frontend and MERN-stack Web Developer who specialize in HTML5/CSS3,
+        JavaScript, React.js, Next.js, TypeScript, Node.js, NoSQL/SQL databases,
+        REST APIs and WordPress.
       </p>
     </div>
   );

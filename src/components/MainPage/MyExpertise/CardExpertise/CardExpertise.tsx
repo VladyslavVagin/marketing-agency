@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 type Props = {
   solution: {

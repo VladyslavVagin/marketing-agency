@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
 const Information: FC<Project> = ({ project }) => {

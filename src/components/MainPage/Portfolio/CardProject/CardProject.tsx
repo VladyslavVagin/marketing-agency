@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
 const CardProject: FC<Project> = ({ project }) => {

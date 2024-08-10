@@ -1,4 +1,4 @@
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const ExpertiseTitle = () => {
   return (

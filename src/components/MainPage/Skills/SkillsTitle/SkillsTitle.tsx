@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const SkillsTitle = () => {
   return (

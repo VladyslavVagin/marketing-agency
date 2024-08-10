@@ -1,5 +1,5 @@
 import React from 'react';
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const TitleMedia = () => {
   return (

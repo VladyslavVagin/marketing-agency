@@ -1,6 +1,6 @@
 import { FC, Dispatch, SetStateAction } from "react";
 import Image from "next/image";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 type Props = {
   category: string;

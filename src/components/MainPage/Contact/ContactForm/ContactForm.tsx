@@ -6,7 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { contactSchema } from "@/schemas/schemas";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const ContactForm = () => {
   const formRef = useRef(null);

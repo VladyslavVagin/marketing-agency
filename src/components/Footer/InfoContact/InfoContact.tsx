@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { paytoneOne } from "@/app/layout";
+import { paytoneOne } from "@/app/[locale]/layout";
 
 const InfoContact = () => {
   return (
