@@ -1,8 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { paytoneOne } from "@/app/[locale]/layout";
 
 const Information = () => {
+  const t = useTranslations("AboutMe");
+
   return (
     <div className="px-3.5 py-20 relative z-20 mx-auto rounded-b-[50px] mt-[-50px] max-w-[425px] md:max-w-[800px] xl:max-w-[1280px] xl:px-[135px]">
       <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
@@ -12,35 +17,28 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>Skills</span>
+          <span className={`${paytoneOne.className} text-logo`}>
+            {t("skills")}
+          </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-yellowIcon w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <h3 className="subtitle">Tech. skills:</h3>
+            <h3 className="subtitle">{t("techSkills")}</h3>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              HTML5, CSS3, JavaScript, TypeScript, React.js, Redux, Redux
-              Toolkit, Next.js, Tailwind CSS, SCSS, Styled-Components,
-              Framer-motion, Material UI, Sanity, Stripe, Node.js, Express.js,
-              React Native (Expo), SQL/NoSQL databases, Firebase, JQuery,
-              Swagger, WordPress, AWS Cloud, JQuery, i18next,
-              JS/React-libraries.
+              {t("skillsValues")}
             </p>
-            <h3 className="subtitle mt-4">Soft:</h3>
+            <h3 className="subtitle mt-4">{t("soft")}</h3>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              VSCode, Git, GitHub, Figma, Trello, Jira, Slack, Zoom, Postman,
-              Swagger, Squooash, Chrome Devtools, Mongo Atlas, Heroku, Vercel,
-              Netlify
+              {t("softValues")}
             </p>
-            <h3 className="subtitle mt-4">Approaches:</h3>
+            <h3 className="subtitle mt-4">{t("approaches")}</h3>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              Mobile First, Responsive Design, Cross-browser compatibility,
-              Pixel Perfect, SEO optimization, Accessibility, SCRUM, Agile,
-              JWT-authentication, Animation, REST API.
+              {t("approachesValues")}
             </p>
             <div className="relative w-full h-40 mt-6">
               <Image
                 src="/images/about/banner.webp"
-                alt="Banner from LinkedIn"
+                alt={t("banner")}
                 layout="fill"
                 objectFit="contain"
                 className="rounded-2xl"
@@ -58,29 +56,21 @@ const Information = () => {
             ></span>
           </div>
           <span className={`${paytoneOne.className} text-logo`}>
-            Seaman Life
+            {t("seamanLife")}
           </span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              From 2008 to 2014 I was a student at Odessa National Maritime
-              Academy ( now called National University Odessa Maritime Academy)
-              where I studied to become a marine navigator. During my education
-              I started my seaman&apos;s career on international ships. My first
-              voyage I get in 2011 on bulk carrier like Deck Cadet. In February
-              2014, I was graduated like Specialist of Navigation (Master&apos;s
-              degree).
+              {t("textSeaman1")}
             </p>
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
-              From 2017 I became Third Officer and until August 2022 worked on
-              this position and thought about new opportunities in my life like
-              Web Development.
+              {t("textSeaman2")}
             </p>
             <div className="w-48 h-48 rounded-full relative mx-auto mt-4">
               <Image
                 src="/images/about/onma.webp"
-                alt="Symbol of National University Odessa National Maritime Academy"
+                alt={t("onmaSymbol")}
                 layout="fill"
                 objectFit="cover"
               />

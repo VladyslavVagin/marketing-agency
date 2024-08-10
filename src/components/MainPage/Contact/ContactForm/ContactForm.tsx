@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from "@emailjs/browser";
@@ -9,6 +10,7 @@ import { contactSchema } from "@/schemas/schemas";
 import { paytoneOne } from "@/app/[locale]/layout";
 
 const ContactForm = () => {
+  const t = useTranslations("HomePage");
   const formRef = useRef(null);
   const {
     register,
@@ -26,14 +28,14 @@ const ContactForm = () => {
           formRef.current,
           process.env.NEXT_PUBLIC_SERVICE_KEY
         );
-        toast.success("Message sent successfully!");
+        toast.success(t("sendMessageSuccess"));
         reset();
       } else {
-        toast.error("Failed to send message. Please try again later.");
+        toast.error(t("sendMessageError"));
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      toast.error("Failed to send message. Please try again later.");
+      toast.error(t("sendMessageError"));
     }
   };
 
@@ -42,7 +44,7 @@ const ContactForm = () => {
       <h3
         className={`${paytoneOne.className} text-2xl text-black font-normal mb-4`}
       >
-        Want a collaboration?
+        {t("wantCollaboration")}
       </h3>
       <form
         ref={formRef}
@@ -53,7 +55,7 @@ const ContactForm = () => {
           <input
             type="text"
             {...register("name")}
-            placeholder="Name"
+            placeholder={t("name")}
             className="w-full h-12 rounded-xl outline-none focus-within:border-accent border border-gray-300 px-4 py-2 text-lg text-gray-500 font-light"
           />
           {errors.email && (
@@ -78,7 +80,7 @@ const ContactForm = () => {
         <label className="w-full">
           <textarea
             {...register("message")}
-            placeholder="Message"
+            placeholder={t("message")}
             className="w-full h-28 rounded-xl outline-none focus-within:border-accent border border-gray-300 px-4 py-2 text-lg text-gray-500 font-light"
           />
           {errors.email && (
@@ -89,10 +91,10 @@ const ContactForm = () => {
         </label>
         <button
           type="submit"
-          aria-label="Submit form and send message"
+          aria-label={t("submitAriaLabel")}
           className="w-full h-12 rounded-xl bg-accent outline-none text-white text-base font-bold transition-colors duration-500 xl:hover:bg-yellowIcon xl:hover:text-black"
         >
-          Submit
+          {t("submit")}
         </button>
       </form>
     </div>

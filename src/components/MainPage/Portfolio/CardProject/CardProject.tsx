@@ -3,12 +3,13 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
 const CardProject: FC<Project> = ({ project }) => {
   const { path, title, thumbnail } = project;
+  const t = useTranslations("HomePage");
   const currentLocale = useLocale();
 
   return (
@@ -16,10 +17,11 @@ const CardProject: FC<Project> = ({ project }) => {
       <Link
         href={`/${currentLocale}/portfolio/${path}`}
         className="w-full h-full"
+        aria-label={t("ariaLabelLink")}
       >
         <Image
           src={thumbnail}
-          alt="Home page of PetLove project"
+          alt={t("screenAlt")}
           layout="fill"
           objectFit="cover"
           className="absolute z-10 rounded-2xl filter brightness-50 transition-all duration-500 hover:filter-none"

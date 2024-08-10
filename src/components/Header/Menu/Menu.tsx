@@ -14,6 +14,7 @@ const Menu = () => {
     <div className="flex items-center justify-center gap-12 text-2xl text-white mr-6">
       <Link
         href={`/${currentLocale}`}
+        aria-label={t("ariaLabelMain")}
         className={`${
           pathname === `/${currentLocale}` ? "activeNav" : ""
         } border-b border-b-accent transition-all duration-500 hover:text-yellowIcon`}
@@ -22,6 +23,7 @@ const Menu = () => {
       </Link>
       <Link
         href={`/${currentLocale}/about`}
+        aria-label={t("ariaLabelAbout")}
         className={`${
           pathname === `/${currentLocale}/about` ? "activeNav" : ""
         } border-b border-b-accent transition-all duration-500 hover:text-yellowIcon`}
@@ -30,6 +32,7 @@ const Menu = () => {
       </Link>
       <Link
         href={`/${currentLocale}/portfolio`}
+        aria-label={t("ariaLabelProjects")}
         className={`${
           pathname === `/${currentLocale}/portfolio` ? "activeNav" : ""
         } border-b border-b-accent transition-all duration-500 hover:text-yellowIcon`}

@@ -15,7 +15,7 @@ const MenuFooter = () => {
         <li>
           <Link
             href={`/${currentLocale}`}
-            aria-label="Go to Main page"
+            aria-label={t("ariaLabelMain")}
             className={`${
               pathname === `/${currentLocale}`
                 ? "border-white xl:hover:border-accent"
@@ -28,7 +28,7 @@ const MenuFooter = () => {
         <li>
           <Link
             href={`/${currentLocale}/about`}
-            aria-label="Go to About Me page"
+            aria-label={t("ariaLabelAbout")}
             className={`${
               pathname === `/${currentLocale}/about`
                 ? "border-white xl:hover:border-accent"
@@ -41,7 +41,7 @@ const MenuFooter = () => {
         <li>
           <Link
             href={`/${currentLocale}/portfolio`}
-            aria-label="Go to Projects page"
+            aria-label={t("ariaLabelProjects")}
             className={`${
               pathname === `/${currentLocale}/portfolio`
                 ? "border-white xl:hover:border-accent"

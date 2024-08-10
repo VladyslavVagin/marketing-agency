@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { FC, Dispatch, SetStateAction } from "react";
 import { IoClose } from "react-icons/io5";
 import SwitcherLang from "../SwitcherLang/SwitcherLang";
@@ -14,6 +14,7 @@ type Props = {
 const MobileMenu: FC<Props> = ({ setIsOpen }) => {
   const path = usePathname();
   const currentLocale = useLocale();
+  const t = useTranslations("Header");
 
   return (
     <div className="fixed z-[60] top-0 left-0 w-screen h-screen bg-black bg-opacity-40">
@@ -21,6 +22,7 @@ const MobileMenu: FC<Props> = ({ setIsOpen }) => {
         <button
           type="button"
           className="absolute top-4 right-4"
+          aria-label={t("closeModalAriaLabel")}
           onClick={() => setIsOpen(false)}
         >
           <IoClose className="fill-black w-9 h-9" />
@@ -29,28 +31,32 @@ const MobileMenu: FC<Props> = ({ setIsOpen }) => {
           <li>
             <Link
               href={`/${currentLocale}`}
-              aria-label="Go to Main page"
+              aria-label={t("ariaLabelMain")}
               className={`${path === `/${currentLocale}` ? "active" : ""}`}
             >
-              Main
+              {t("main")}
             </Link>
           </li>
           <li>
             <Link
               href={`/${currentLocale}/about`}
-              aria-label="Go to About Me page"
-              className={`${path === `/${currentLocale}/about` ? "active" : ""}`}
+              aria-label={t("ariaLabelAbout")}
+              className={`${
+                path === `/${currentLocale}/about` ? "active" : ""
+              }`}
             >
-              About Me
+              {t("about")}
             </Link>
           </li>
           <li>
             <Link
               href={`/${currentLocale}/portfolio`}
-              aria-label="Go to Projects page"
-              className={`${path === `/${currentLocale}/portfolio` ? "active" : ""}`}
+              aria-label={t("ariaLabelProjects")}
+              className={`${
+                path === `/${currentLocale}/portfolio` ? "active" : ""
+              }`}
             >
-              Projects
+              {t("projects")}
             </Link>
           </li>
           <li>
