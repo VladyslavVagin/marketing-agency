@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import { FC, Dispatch, SetStateAction } from "react";
 import { IoClose } from "react-icons/io5";
+import SwitcherLang from "../SwitcherLang/SwitcherLang";
 
 type Props = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
@@ -9,6 +13,7 @@ type Props = {
 
 const MobileMenu: FC<Props> = ({ setIsOpen }) => {
   const path = usePathname();
+  const currentLocale = useLocale();
 
   return (
     <div className="fixed z-[60] top-0 left-0 w-screen h-screen bg-black bg-opacity-40">
@@ -22,19 +27,34 @@ const MobileMenu: FC<Props> = ({ setIsOpen }) => {
         </button>
         <ul className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-6 text-2xl font-semibold">
           <li>
-            <Link href="/" aria-label="Go to Main page" className={`${path === '/' ? 'active' : ''}`}>
+            <Link
+              href={`/${currentLocale}`}
+              aria-label="Go to Main page"
+              className={`${path === `/${currentLocale}` ? "active" : ""}`}
+            >
               Main
             </Link>
           </li>
           <li>
-            <Link href="/about" aria-label="Go to About Me page" className={`${path === '/about' ? 'active' : ''}`}>
+            <Link
+              href={`/${currentLocale}/about`}
+              aria-label="Go to About Me page"
+              className={`${path === `/${currentLocale}/about` ? "active" : ""}`}
+            >
               About Me
             </Link>
           </li>
           <li>
-            <Link href="/portfolio" aria-label="Go to Projects page" className={`${path === '/portfolio' ? 'active' : ''}`}>
+            <Link
+              href={`/${currentLocale}/portfolio`}
+              aria-label="Go to Projects page"
+              className={`${path === `/${currentLocale}/portfolio` ? "active" : ""}`}
+            >
               Projects
             </Link>
+          </li>
+          <li>
+            <SwitcherLang />
           </li>
         </ul>
       </div>

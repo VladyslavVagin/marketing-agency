@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import SwitcherLang from "@/components/SwitcherLang/SwitcherLang";
 
 const Menu = () => {
   const pathname = usePathname();
@@ -34,6 +35,7 @@ const Menu = () => {
       >
         Projects
       </Link>
+      <SwitcherLang />
     </div>
   );
 };

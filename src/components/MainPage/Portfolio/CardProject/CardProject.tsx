@@ -1,15 +1,22 @@
+"use client";
+
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
 const CardProject: FC<Project> = ({ project }) => {
   const { path, title, thumbnail } = project;
+  const currentLocale = useLocale();
 
   return (
     <li className="w-[346px] h-[346px] relative rounded-2xl shadow-xl border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
-      <Link href={`/portfolio/${path}`} className="w-full h-full">
+      <Link
+        href={`/${currentLocale}/portfolio/${path}`}
+        className="w-full h-full"
+      >
         <Image
           src={thumbnail}
           alt="Home page of PetLove project"

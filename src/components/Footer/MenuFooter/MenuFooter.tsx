@@ -1,20 +1,22 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 
 const MenuFooter = () => {
   const pathname = usePathname();
+  const currentLocale = useLocale();
 
   return (
     <nav className="my-14 md:my-0">
       <ul className="flex flex-col items-start gap-2 xl:gap-4">
         <li>
           <Link
-            href={"/"}
+            href={`/${currentLocale}`}
             aria-label="Go to Main page"
             className={`${
-              pathname === "/"
+              pathname === `/${currentLocale}`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
             } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}
@@ -24,10 +26,10 @@ const MenuFooter = () => {
         </li>
         <li>
           <Link
-            href={"/about"}
+            href={`/${currentLocale}/about`}
             aria-label="Go to About Me page"
             className={`${
-              pathname === "/about"
+              pathname === `/${currentLocale}/about`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
             } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}
@@ -37,10 +39,10 @@ const MenuFooter = () => {
         </li>
         <li>
           <Link
-            href={"/portfolio"}
+            href={`/${currentLocale}/portfolio`}
             aria-label="Go to Projects page"
             className={`${
-              pathname === "/portfolio"
+              pathname === `/${currentLocale}/portfolio`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
             } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}

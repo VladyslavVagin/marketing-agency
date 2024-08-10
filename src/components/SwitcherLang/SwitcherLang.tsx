@@ -12,21 +12,32 @@ const SwitcherLang = () => {
 
   const handleSelect = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
-    const currentPath = pathname.split('/').slice(2).join('/');
+    const currentPath = pathname.split("/").slice(2).join("/");
     startTransition(() => {
       router.replace(`/${nextLocale}/${currentPath}`);
     });
   };
 
   return (
-    <div>
+    <div className="mx-auto">
       <select
         defaultValue={currentLocale}
         onChange={handleSelect}
         disabled={isPending}
+        className="bg-accent text-white text-xl border-b border-b-gray-300 px-2 py-1 cursor-pointer outline-none transition-colors duration-500 xl:hover:text-yellow-500 xl:hover:border-yellow-500"
       >
-        <option value="en">ENG</option>
-        <option value="es">ESP</option>
+        <option
+          value="en"
+          className="cursor-pointer bg-white text-black transition-colors duration-500 xl:hover:text-accent"
+        >
+          ENG
+        </option>
+        <option
+          value="es"
+          className="cursor-pointer bg-white text-black transition-colors duration-500 xl:hover:text-accent"
+        >
+          ESP
+        </option>
       </select>
     </div>
   );
