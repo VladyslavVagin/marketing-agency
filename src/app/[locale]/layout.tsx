@@ -43,6 +43,42 @@ export default async function RootLayout({
               : "Vladyslav Vagin es un desarrollador web profesional especializado en tecnologías JavaScript modernas como React, Next.js y Node.js."
           }
         />
+        <meta
+          property="og:title"
+          content={
+            locale === "en"
+              ? "Vladyslav Vagin - Modern Web Developing"
+              : "Vladyslav Vagin - Desarrollo Web moderno"
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            locale === "en"
+              ? "Vladyslav Vagin is a professional web developer specializing in modern JavaScript technologies like React, Next.js and Node.js."
+              : "Vladyslav Vagin es un desarrollador web profesional especializado en tecnologías JavaScript modernas como React, Next.js y Node.js."
+          }
+        />
+        <meta property="og:url" content="/apple-touch-icon.png" />
+        <meta property="og:type" content="website" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
         <title>
           {locale === "en"
             ? "Vladyslav Vagin - Modern Web Developing"
@@ -58,7 +94,9 @@ export default async function RootLayout({
       <NextIntlClientProvider messages={messages}>
         <body className={`${montserrat.className}`}>
           <Header />
-          <main className="bg-[#d1ebf5] min-h-screen overflow-hidden">{children}</main>
+          <main className="bg-[#d1ebf5] min-h-screen overflow-hidden">
+            {children}
+          </main>
           <Footer />
           <Toast />
         </body>

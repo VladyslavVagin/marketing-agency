@@ -3,7 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { paytoneOne } from "@/app/[locale]/layout";
+import { variantScale } from "@/animation/MainPage/portfolio";
+import {
+  variantsBackdrop,
+  variants,
+  variantsLI1,
+  variantsLI2,
+  variantsLI3,
+} from "@/animation/MobileMenu/variants";
 
 const Information = () => {
   const t = useTranslations("AboutMe");
@@ -17,25 +26,85 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("skills")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-yellowIcon w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <h3 className="subtitle text-white">{t("techSkills")}</h3>
-            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-yellowIcon w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.h3
+              className="subtitle text-white"
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              {t("techSkills")}
+            </motion.h3>
+            <motion.p
+              className="text-lg font-light text-white md:text-2xl xl:font-semibold"
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
               {t("skillsValues")}
-            </p>
-            <h3 className="subtitle mt-4 text-white">{t("soft")}</h3>
-            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
+            </motion.p>
+            <motion.h3
+              className="subtitle mt-4 text-white"
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              {t("soft")}
+            </motion.h3>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-white md:text-2xl xl:font-semibold"
+            >
               {t("softValues")}
-            </p>
-            <h3 className="subtitle mt-4 text-white">{t("approaches")}</h3>
-            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
+            </motion.p>
+            <motion.h3
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="subtitle mt-4 text-white"
+            >
+              {t("approaches")}
+            </motion.h3>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-white md:text-2xl xl:font-semibold"
+            >
               {t("approachesValues")}
-            </p>
-            <div className="relative w-full h-40 mt-6">
+            </motion.p>
+            <motion.div
+              variants={variantScale}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="relative w-full h-40 mt-6"
+            >
               <Image
                 src="/images/about/banner.webp"
                 alt={t("banner")}
@@ -43,8 +112,8 @@ const Information = () => {
                 objectFit="contain"
                 className="rounded-2xl"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
@@ -55,27 +124,57 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            className={`${paytoneOne.className} text-logo`}
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             {t("seamanLife")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
               {t("textSeaman1")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("textSeaman2")}
-            </p>
-            <div className="w-48 h-48 rounded-full relative mx-auto mt-4">
+            </motion.p>
+            <motion.div
+              variants={variantScale}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="w-48 h-48 rounded-full relative mx-auto mt-4"
+            >
               <Image
                 src="/images/about/onma.webp"
                 alt={t("onmaSymbol")}
                 layout="fill"
                 objectFit="cover"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
@@ -86,22 +185,58 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("goit")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {t("goitText1")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("goitText2")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI3}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("goitText3")}
-            </p>
-            <div className="flex items-center justify-center gap-2 flex-wrap mt-4 md:gap-8">
+            </motion.p>
+            <motion.div
+              variants={variantScale}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="flex items-center justify-center gap-2 flex-wrap mt-4 md:gap-8"
+            >
               <Image
                 src="/images/about/page1.webp"
                 alt={t("certPage1")}
@@ -130,8 +265,8 @@ const Information = () => {
                 height={200}
                 className="md:w-44 md:h-60"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
@@ -142,22 +277,52 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("getafe")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {t("getafeText1")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("getafeText2")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI3}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("getafeText3")}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
 
@@ -168,19 +333,43 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("searchJob")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {t("searchJobText1")}
-            </p>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3">
+            </motion.p>
+            <motion.p
+              variants={variantsLI2}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+            >
               {t("searchJobText2")}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
 
@@ -191,17 +380,41 @@ const Information = () => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantsBackdrop}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("hobby")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {t("hobbyText")}
-            </p>
+            </motion.p>
             <div className="mt-4 flex flex-col items-center justify-center gap-3 md:flex-row">
-              <div className="w-full h-28 relative md:w-[40%] xl:h-40">
+              <motion.div
+                variants={variantsLI2}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="w-full h-28 relative md:w-[40%] xl:h-40"
+              >
                 <Image
                   src="/images/about/foto1.webp"
                   alt={t("hobbyPhotoAlt")}
@@ -209,8 +422,14 @@ const Information = () => {
                   objectFit="cover"
                   className="rounded-2xl"
                 />
-              </div>
-              <div className="w-full h-28 relative md:w-[40%] xl:h-40">
+              </motion.div>
+              <motion.div
+                variants={variantsLI3}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="w-full h-28 relative md:w-[40%] xl:h-40"
+              >
                 <Image
                   src="/images/about/foto2.webp"
                   alt={t("hobbyPhotoAlt")}
@@ -218,9 +437,9 @@ const Information = () => {
                   objectFit="cover"
                   className="rounded-2xl"
                 />
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
