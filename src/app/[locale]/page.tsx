@@ -5,6 +5,7 @@ import Portfolio from "@/components/MainPage/Portfolio/Portfolio";
 import Education from "@/components/MainPage/Education/Education";
 import Contact from "@/components/MainPage/Contact/Contact";
 import SocialMedia from "@/components/MainPage/SocialMedia/SocialMedia";
+import ButtonUp from "@/components/ButtonUp/ButtonUp";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Contact />
         <SocialMedia />
       </section>
+      <ButtonUp />
     </>
   );
 }
