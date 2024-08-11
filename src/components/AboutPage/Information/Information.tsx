@@ -23,16 +23,16 @@ const Information = () => {
         </div>
         <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-yellowIcon w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <h3 className="subtitle">{t("techSkills")}</h3>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+            <h3 className="subtitle text-white">{t("techSkills")}</h3>
+            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
               {t("skillsValues")}
             </p>
-            <h3 className="subtitle mt-4">{t("soft")}</h3>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+            <h3 className="subtitle mt-4 text-white">{t("soft")}</h3>
+            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
               {t("softValues")}
             </p>
-            <h3 className="subtitle mt-4">{t("approaches")}</h3>
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+            <h3 className="subtitle mt-4 text-white">{t("approaches")}</h3>
+            <p className="text-lg font-light text-white md:text-2xl xl:font-semibold">
               {t("approachesValues")}
             </p>
             <div className="relative w-full h-40 mt-6">

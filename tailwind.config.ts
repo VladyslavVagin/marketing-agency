@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         accent: "#583EBC",
         blackLight: "#333333",
-        yellowIcon: "#F8F7AB",
+        yellowIcon: "#ff8c42",
         grayText: "rgba(51, 51, 51, 0.5)",
       },
       fontFamily: {

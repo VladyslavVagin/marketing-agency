@@ -15,7 +15,7 @@ const ListSkills = () => {
       {skills.map((skill: Skill) => (
         <li
           key={skill.id}
-          className="w-[270px] h-[272px] rounded-2xl bg-white shadow-xl flex flex-col items-center justify-center md:w-80 md:h-80 xl:w-[250px] xl:h-[252px] xl:odd:mt-[-120px]"
+          className="w-[270px] h-[272px] rounded-2xl bg-white shadow-xl shadow-accent flex flex-col items-center justify-center md:w-80 md:h-80 xl:w-[250px] xl:h-[252px] xl:odd:mt-[-120px]"
         >
           <div className="relative w-40 h-40">
             <ProgressBar

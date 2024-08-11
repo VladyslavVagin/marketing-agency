@@ -21,7 +21,7 @@ const ListProjects = () => {
         {projects.slice(0, numberProjects).map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
-        <li className="w-[346px] h-[346px] relative z-10 bg-accent rounded-2xl shadow-xl border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
+        <li className="w-[346px] h-[346px] relative z-10 bg-accent rounded-full shadow-xl shadow-yellowIcon border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
           <Link
             href={"/portfolio"}
             className={`w-full h-full flex items-center justify-center text-white ${paytoneOne.className} text-logo rounded-2xl transition-all duration-500 xl:hover:text-yellowIcon xl:hover:shadow-accent`}

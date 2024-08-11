@@ -30,7 +30,11 @@ const CardEducation: FC<Props> = ({ education }) => {
         <span className={`${paytoneOne.className} text-logo`}>{year}</span>
       </div>
       <div className="border-l border-l-gray-400 pl-2 md:pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-        <div className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
+        <div
+          className={`bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl ${
+            id === 2 ? "shadow-yellowIcon" : "shadow-accent"
+          } md:w-[680px] xl:w-full`}
+        >
           <h3 className="text-2xl font-normal mb-5">{title}</h3>
           <p className="text-lg font-light text-gray-500">{description}</p>
         </div>

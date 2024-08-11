@@ -13,7 +13,7 @@ const CardProject: FC<Project> = ({ project }) => {
   const currentLocale = useLocale();
 
   return (
-    <li className="w-[346px] h-[346px] relative rounded-2xl shadow-xl border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
+    <li className="w-[346px] h-[346px] relative rounded-full shadow-xl shadow-yellowIcon border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
       <Link
         href={`/${currentLocale}/portfolio/${path}`}
         className="w-full h-full"
@@ -24,7 +24,7 @@ const CardProject: FC<Project> = ({ project }) => {
           alt={t("screenAlt")}
           layout="fill"
           objectFit="cover"
-          className="absolute z-10 rounded-2xl filter brightness-50 transition-all duration-500 hover:filter-none"
+          className="absolute z-10 rounded-full filter brightness-50 transition-all duration-500 hover:filter-none"
         />
         <p
           className={`${paytoneOne.className} absolute z-10 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-white text-center text-logo font-normal transition-colors duration-500 xl:hover:text-accent`}

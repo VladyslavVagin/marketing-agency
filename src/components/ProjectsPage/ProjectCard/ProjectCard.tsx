@@ -12,7 +12,7 @@ const ProjectCard: FC<Project> = ({ project }) => {
   const t = useTranslations("Projects");
 
   return (
-    <li className="w-[300px] h-[300px] bg-accent shadow-xl p-2 rounded-lg relative overflow-hidden border-4 border-accent flex flex-col items-center justify-center">
+    <li className="w-[300px] h-[300px] bg-accent shadow-xl shadow-yellowIcon p-2 rounded-lg relative overflow-hidden border-4 border-accent flex flex-col items-center justify-center">
       <Image
         src={project.thumbnail}
         alt={project.title}

@@ -7,7 +7,7 @@ export const skills = [
   },
   {
     id: 2,
-    name: "JavaScript, TypeScript",
+    name: "JS/TS",
     progress: 86,
     color: "#C9614D",
   },
