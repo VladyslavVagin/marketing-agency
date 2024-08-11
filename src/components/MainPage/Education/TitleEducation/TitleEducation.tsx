@@ -1,7 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { paytoneOne } from "@/app/[locale]/layout";
+import {
+  variantSubtitle,
+  variantTitle,
+  variantText,
+} from "@/animation/MainPage/expertise";
 
 const TitleEducation = () => {
   const t = useTranslations("HomePage");
@@ -9,12 +15,34 @@ const TitleEducation = () => {
   return (
     <div className="xl:flex xl:items-start xl:justify-between">
       <div>
-        <p className="subtitle">{t("educationSubtitle")}</p>
-        <h2 className={`${paytoneOne.className} title mb-5`}>
+        <motion.p
+          className="subtitle"
+          variants={variantSubtitle}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {t("educationSubtitle")}
+        </motion.p>
+        <motion.h2
+          className={`${paytoneOne.className} title mb-5`}
+          variants={variantTitle}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           {t("educationTitle")}
-        </h2>
+        </motion.h2>
       </div>
-      <p className="title-text xl:w-[470px]">{t("educationText")}</p>
+      <motion.p
+        className="title-text xl:w-[470px]"
+        variants={variantText}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        {t("educationText")}
+      </motion.p>
     </div>
   );
 };

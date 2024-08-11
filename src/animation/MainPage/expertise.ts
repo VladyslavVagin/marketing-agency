@@ -4,7 +4,7 @@ export const variantSubtitle = {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.7,
         delay: 0.2,
       },
     },
@@ -16,26 +16,26 @@ export const variantSubtitle = {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.7,
         delay: 0.5,
       },
     },
   };
 
   export const variantText = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: 50 },
     show: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.7,
         delay: 0.8,
       },
     },
   };
 
-  export const variantButtons = {
-    hidden: { opacity: 0, y: 50 },
+  export const variantSlider = {
+    hidden: { opacity: 0, y: 100 },
     show: {
       opacity: 1,
       y: 0,
@@ -44,17 +44,4 @@ export const variantSubtitle = {
         delay: 0.2,
       },
     },
-  };
-
-  export const variantRotate = {
-    hidden: { opacity: 0, x: 100, rotate: 160 },
-    show: {
-      opacity: 1,
-      x: 0,
-      rotate: 0,
-      transition: {
-        duration: 1.0,
-        delay: 0.2,
-      },
-    },
-  };
+  }

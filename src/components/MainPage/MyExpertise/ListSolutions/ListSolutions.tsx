@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { SwiperSlide } from "swiper/react";
 import { FaLaptopCode, FaSitemap } from "react-icons/fa";
 import { AiFillApi } from "react-icons/ai";
 import CardExpertise from "../CardExpertise/CardExpertise";
+import { variantSlider } from "@/animation/MainPage/expertise";
 import Slider from "@/components/Slider/Slider";
 
 const ListSolutions = () => {
@@ -30,7 +32,13 @@ const ListSolutions = () => {
   ];
 
   return (
-    <div className="relative mt-14">
+    <motion.div
+      className="relative mt-14"
+      variants={variantSlider}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <Slider className="flex flex-col items-center gap-4 max-w-[370px] md:max-w-[768px] xl:max-w-[1280px]">
         {solutions.map((solution, index) => (
           <SwiperSlide key={index}>
@@ -45,7 +53,7 @@ const ListSolutions = () => {
         height={176}
         className="absolute top-[-40px] right-[-10px] xl:right-[-40px] xl:top-[-60px]"
       />
-    </div>
+    </motion.div>
   );
 };
 

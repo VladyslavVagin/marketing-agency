@@ -6,8 +6,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 import { contactSchema } from "@/schemas/schemas";
 import { paytoneOne } from "@/app/[locale]/layout";
+import { variantOpacity } from "@/animation/MainPage/contact";
 
 const ContactForm = () => {
   const t = useTranslations("HomePage");
@@ -40,7 +42,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl mx-auto xl:w-[470px]">
+    <motion.div
+      className="w-[286px] px-7 pt-10 pb-12 bg-white rounded-2xl shadow-xl mx-auto xl:w-[470px]"
+      variants={variantOpacity}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <h3
         className={`${paytoneOne.className} text-2xl text-black font-normal mb-4`}
       >
@@ -97,7 +105,7 @@ const ContactForm = () => {
           {t("submit")}
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

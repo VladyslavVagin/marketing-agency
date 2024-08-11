@@ -2,8 +2,16 @@
 
 import { FC, Dispatch, SetStateAction } from "react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { paytoneOne } from "@/app/[locale]/layout";
+import { variantScale } from "@/animation/MainPage/portfolio";
+import {
+  variantSubtitle,
+  variantButtons,
+  variantText,
+  variantTitle,
+} from "@/animation/MainPage/hero";
 
 type Props = {
   category: string;
@@ -18,13 +26,33 @@ const ProjectsPageTitle: FC<Props> = ({ setCategory, category }) => {
       <div className="p-3.5 relative max-w-[1280px] mx-auto md:px-9 md:py-4 xl:px-[135px]">
         <div className="md:flex md:items-center md:justify-between md:gap-6">
           <div className="relative md:max-w-[50%] xl:max-w-[44%]">
-            <p className="subtitle">{t("subtitle")}</p>
-            <h1
+            <motion.p
+              className="subtitle"
+              variants={variantSubtitle}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              {t("subtitle")}
+            </motion.p>
+            <motion.h1
+              variants={variantTitle}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
               className={`${paytoneOne.className} text-titleMain text-center mb-8 md:text-left xl:text-7xl`}
             >
               {t("title")}
-            </h1>
-            <p className="title-text text-white text-justify">{t("text")}</p>
+            </motion.h1>
+            <motion.p
+              className="title-text text-white text-justify"
+              variants={variantText}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              {t("text")}
+            </motion.p>
             <Image
               src="/images/hero/shape.png"
               alt={t("shape")}
@@ -33,7 +61,13 @@ const ProjectsPageTitle: FC<Props> = ({ setCategory, category }) => {
               className="absolute top-0 right-[-120px] xl:right-0"
             />
           </div>
-          <div className="relative w-full h-48 rounded-lg my-4 shadow-sm shadow-white xl:h-60 xl:w-[45%]">
+          <motion.div
+            variants={variantScale}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="relative w-full h-48 rounded-lg my-4 shadow-sm shadow-white xl:h-60 xl:w-[45%]"
+          >
             <Image
               src="/images/projects.webp"
               alt={t("imgAlt")}
@@ -41,10 +75,16 @@ const ProjectsPageTitle: FC<Props> = ({ setCategory, category }) => {
               objectFit="cover"
               className="rounded-lg"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="mt-10 mb-6">
-          <ul className="flex flex-wrap gap-2 items-center justify-center">
+          <motion.ul
+            variants={variantButtons}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex flex-wrap gap-2 items-center justify-center"
+          >
             <li
               className={`border font-bold w-[100px] h-12 flex items-center justify-center rounded-xl ${
                 category === "all"
@@ -120,7 +160,7 @@ const ProjectsPageTitle: FC<Props> = ({ setCategory, category }) => {
                 Fullstack
               </button>
             </li>
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </div>

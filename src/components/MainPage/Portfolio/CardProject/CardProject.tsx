@@ -4,6 +4,8 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { variantScale } from "@/animation/MainPage/portfolio";
 import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
 
@@ -13,7 +15,13 @@ const CardProject: FC<Project> = ({ project }) => {
   const currentLocale = useLocale();
 
   return (
-    <li className="w-[346px] h-[346px] relative rounded-full shadow-xl shadow-yellowIcon border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]">
+    <motion.li
+      variants={variantScale}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="w-[346px] h-[346px] relative rounded-full shadow-xl shadow-yellowIcon border-2 border-white md:w-[300px] md:h-[300px] xl:w-[320px] xl:h-[320px]"
+    >
       <Link
         href={`/${currentLocale}/portfolio/${path}`}
         className="w-full h-full"
@@ -32,7 +40,7 @@ const CardProject: FC<Project> = ({ project }) => {
           {title}
         </p>
       </Link>
-    </li>
+    </motion.li>
   );
 };
 

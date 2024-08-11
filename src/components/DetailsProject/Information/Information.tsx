@@ -4,10 +4,19 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import { paytoneOne } from "@/app/[locale]/layout";
 import { Project } from "@/types/project";
+import { variantTypeProject } from "@/animation/DetailsProject/information";
+import { variantOpacity } from "@/animation/MainPage/contact";
+import {
+  variants,
+  variantsLI1,
+  variantsLI2,
+  variantsLI3,
+} from "@/animation/MobileMenu/variants";
 
 const Information: FC<Project> = ({ project }) => {
   const t = useTranslations("Projects");
@@ -15,11 +24,15 @@ const Information: FC<Project> = ({ project }) => {
   return (
     <div className="px-3.5 py-20 relative z-20 mx-auto rounded-b-[50px] mt-[-50px] max-w-[425px] md:max-w-[800px] xl:max-w-[1280px] xl:px-[135px]">
       <div className="bg-yellowIcon py-4 mb-8 text-center border-4 border-accent rounded-xl relative">
-        <p
+        <motion.p
+          variants={variantTypeProject}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
           className={`${paytoneOne.className} title rounded-2xl relative z-[11]`}
         >
           {t("type")} {project.category.toUpperCase()}
-        </p>
+        </motion.p>
         <Image
           className="absolute z-10 top-[-20px] right-0"
           src="/images/hero/shape.png"
@@ -35,14 +48,34 @@ const Information: FC<Project> = ({ project }) => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>{t("skills")}</span>
+          <motion.span
+            className={`${paytoneOne.className} text-logo`}
+            variants={variantOpacity}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            {t("skills")}
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {project.skills.join(", ")}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
@@ -52,14 +85,34 @@ const Information: FC<Project> = ({ project }) => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>Soft</span>
+          <motion.span
+            variants={variantOpacity}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
+            Soft
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {project.soft.join(", ")}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
@@ -69,16 +122,34 @@ const Information: FC<Project> = ({ project }) => {
               className={`w-[15px] h-[15px] bg-white rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            variants={variantOpacity}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={`${paytoneOne.className} text-logo`}
+          >
             {t("approaches")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {project.approaches.join(", ")}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
@@ -88,19 +159,43 @@ const Information: FC<Project> = ({ project }) => {
               className={`w-[15px] h-[15px] bg-black rounded-full absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
             ></span>
           </div>
-          <span className={`${paytoneOne.className} text-logo`}>
+          <motion.span
+            className={`${paytoneOne.className} text-logo`}
+            variants={variantOpacity}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             {t("description")}
-          </span>
+          </motion.span>
         </div>
         <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
-          <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
-            <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
+          >
+            <motion.p
+              variants={variantsLI1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+            >
               {project.details}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
-      <div className="mt-5 bg-accent p-3 rounded-2xl flex items-center justify-center gap-2 flex-wrap md:gap-4">
+      <motion.div
+        variants={variantOpacity}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="mt-5 bg-accent p-3 rounded-2xl flex items-center justify-center gap-2 flex-wrap md:gap-4"
+      >
         <Link
           href={project.repositoryURL}
           target="_blank"
@@ -117,7 +212,7 @@ const Information: FC<Project> = ({ project }) => {
           <BsGlobe className="w-10 h-10" />
           Demo
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };
