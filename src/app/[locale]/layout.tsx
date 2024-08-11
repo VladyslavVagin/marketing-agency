@@ -37,9 +37,17 @@ export default async function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Vlad Vagin is a professional web developer specializing in modern JavaScript technologies like React, Next.js and Node.js."
+          content={
+            locale === "en"
+              ? "Vladyslav Vagin is a professional web developer specializing in modern JavaScript technologies like React, Next.js and Node.js."
+              : "Vladyslav Vagin es un desarrollador web profesional especializado en tecnologías JavaScript modernas como React, Next.js y Node.js."
+          }
         />
-        <title>Vlad Vagin - Web Developer</title>
+        <title>
+          {locale === "en"
+            ? "Vladyslav Vagin - Modern Web Developing"
+            : "Vladyslav Vagin - Desarrollo Web moderno"}
+        </title>
         <meta />
         <link
           rel="stylesheet"
