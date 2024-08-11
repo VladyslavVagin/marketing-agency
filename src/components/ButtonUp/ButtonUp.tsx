@@ -37,7 +37,7 @@ const ButtonUp = () => {
   return (
     isVisible && (
       <motion.div
-        className="fixed w-16 h-16 bottom-10 right-6 z-50 flex items-center justify-center"
+        className="fixed w-16 h-16 bottom-10 right-6 z-50 flex items-center justify-center transition-transform duration-500 xl:hover:scale-125"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >

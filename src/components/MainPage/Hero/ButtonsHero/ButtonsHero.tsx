@@ -1,19 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const ButtonsHero = () => {
+  const currentLocale = useLocale();
   const t = useTranslations("HomePage");
 
   return (
     <div className="flex items-center justify-center gap-1.5 md:justify-start md:mb-8 relative z-10 xl:gap-4">
-      <Link href="#about" className="btn-link text-black bg-white">
+      <Link href={`/${currentLocale}/about`} aria-label={t("btnAboutAriaLabel")} className="btn-link text-black bg-white">
         {t("btnAbout")}
       </Link>
       <a
         href="/CV/CV_Vagin_Vladyslav_en.pdf"
         download={true}
+        aria-label={t("btnDownloadAriaLabel")}
         className="btn-link bg-accent text-white border-white border-[1px]"
       >
         {t("btnDownload")}

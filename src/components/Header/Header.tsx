@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="bg-accent w-full" id="header">
-      {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
+      {isOpen && <MobileMenu setIsOpen={setIsOpen} isOpen={isOpen} />}
       <div className="p-3.5 flex items-center justify-between max-w-[1280px] mx-auto md:px-9 md:py-4 xl:px-[135px]">
         <Logo />
         <div className="flex items-center justify-center gap-2">

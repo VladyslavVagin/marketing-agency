@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { getProjectsData } from "@/data/projects";
 import DetailsProject from "@/components/DetailsProject/DetailsProject";
+import ButtonUp from "@/components/ButtonUp/ButtonUp";
 
 const ProjectDetails = () => {
   const t = useTranslations("Projects");
@@ -17,6 +18,7 @@ const ProjectDetails = () => {
   return (
     <section>
       <DetailsProject project={projectData} />
+      <ButtonUp />
     </section>
   );
 };
