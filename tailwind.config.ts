@@ -22,6 +22,7 @@ const config: Config = {
       fontSize: {
         logo: ["40px", "48px"],
         titleMain: ["56px", "64px"],
+        notFound: ["186px", "200px"],
       },
       transformOrigin: {
         "50": "50% 50%",

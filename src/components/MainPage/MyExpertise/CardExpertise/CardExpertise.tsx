@@ -20,8 +20,8 @@ const CardExpertise: FC<Props> = ({ solution }) => {
       >
         {solution.title}
       </h3>
-      <p className="text-grayText text-lg font-light text-justify">
-        {solution.description.slice(0, 80)}...
+      <p className="text-grayText text-lg font-light text-justify max-h-32 overflow-scroll">
+        {solution.description}
       </p>
     </div>
   );

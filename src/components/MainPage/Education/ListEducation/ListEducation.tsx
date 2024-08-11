@@ -2,31 +2,12 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { getEducations } from "@/data/educations";
 import CardEducation from "../CardEducation/CardEducation";
 
 const ListEducation = () => {
   const t = useTranslations("HomePage");
-
-  const educations = [
-    {
-      id: 1,
-      year: "2014",
-      title: t("onma"),
-      description: t("textOnma"),
-    },
-    {
-      id: 2,
-      year: "2023",
-      title: t("goit"),
-      description: t("textGoit"),
-    },
-    {
-      id: 3,
-      year: "2024",
-      title: t("getafe"),
-      description: t("textGetafe"),
-    },
-  ];
+  const educations = getEducations(t);
 
   return (
     <div className="mt-16 relative">

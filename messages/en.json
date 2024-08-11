@@ -52,7 +52,9 @@
     "ariaLabelMain":"Go to the main page",
     "ariaLabelAbout":"Go to the about page",
     "ariaLabelProjects":"Go to the projects page",
-    "closeModalAriaLabel":"Close the mobile menu"
+    "closeModalAriaLabel":"Close the mobile menu",
+    "notFound":"Not Found",
+    "goMain":"Go to the main page"
   },
   "Footer": {
     "slogan":"Crafting Digital Experiences, One Line of Code at a Time.",

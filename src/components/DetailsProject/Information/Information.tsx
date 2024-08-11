@@ -95,7 +95,7 @@ const Information: FC<Project> = ({ project }) => {
         <div className="border-l border-l-gray-400 pl-8 py-4 mt-4 ml-6 max-w-[335px] flex items-center md:max-w-[700px] xl:max-w-full">
           <div className="bg-white w-72 rounded-2xl px-12 py-10 shadow-xl md:w-[680px] xl:w-full">
             <p className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold">
-              {project.description}
+              {project.details}
             </p>
           </div>
         </div>
