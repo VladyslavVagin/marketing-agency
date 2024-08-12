@@ -30,7 +30,7 @@ const ListLinks = () => {
             href={"https://www.linkedin.com/in/vladyslav-vagin-devfrontend"}
             target="_blank"
             aria-label={t("ariaLabelLinkedIn")}
-            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white"
+            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white xl:hover:text-white"
           >
             <FaLinkedinIn className="w-12 h-12 fill-black md:w-16 md:h-16" />
           </Link>
@@ -46,7 +46,7 @@ const ListLinks = () => {
             href={"https://github.com/VladyslavVagin"}
             target="_blank"
             aria-label={t("ariaLabelGitHub")}
-            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white"
+            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white xl:hover:text-white"
           >
             <BsGithub className="w-12 h-12 fill-black md:w-16 md:h-16" />
           </Link>
@@ -62,7 +62,7 @@ const ListLinks = () => {
             href={"https://t.me/Go_koFunikular"}
             target="_blank"
             aria-label={t("ariaLabelTelegram")}
-            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white"
+            className="w-full h-full flex items-center justify-center rounded-2xl transition-all duration-500 xl:hover:bg-accent xl:hover:shadow-xl xl:hover:shadow-white xl:hover:text-white"
           >
             <FaTelegramPlane className="w-12 h-12 fill-black md:w-16 md:h-16" />
           </Link>

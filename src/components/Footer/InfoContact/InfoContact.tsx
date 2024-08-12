@@ -12,7 +12,7 @@ const InfoContact = () => {
       <h3 className="subtitle mb-4">{t("contactFooter")}</h3>
       <Link
         href="tel:665051466"
-        className={`${paytoneOne.className} text-2xl font-normal transition-colors duration-500 xl:hover:text-accent`}
+        className={`${paytoneOne.className} text-2xl font-normal transition-colors duration-500 xl:hover:text-yellowIcon`}
         aria-label={t("callUs")}
       >
         +34 665 051 466
@@ -21,7 +21,7 @@ const InfoContact = () => {
         <Link
           href="mailto:vladtwince@gmail.com"
           aria-label={t("sendEmail")}
-          className="xl:text-lg transition-colors duration-500 xl:hover:text-accent"
+          className="xl:text-lg transition-colors duration-500 xl:hover:text-yellowIcon"
         >
           vladtwince@gmail.com
         </Link>

@@ -12,7 +12,7 @@ import {
   variantsLI1,
   variantsLI2,
   variantsLI3,
-} from "@/animation/MobileMenu/variants";
+} from "@/animation/About/about";
 
 const Information = () => {
   const t = useTranslations("AboutMe");

@@ -4,7 +4,7 @@ export const variantOpacity = {
       opacity: 1,
       transition: {
         duration: 1.0,
-        delay: 0.2,
+        delay: 0,
       },
     },
   }

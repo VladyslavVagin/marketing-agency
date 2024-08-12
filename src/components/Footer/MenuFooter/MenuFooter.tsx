@@ -20,7 +20,7 @@ const MenuFooter = () => {
               pathname === `/${currentLocale}`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
-            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}
+            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-yellowIcon`}
           >
             {t("main")}
           </Link>
@@ -33,7 +33,7 @@ const MenuFooter = () => {
               pathname === `/${currentLocale}/about`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
-            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}
+            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-yellowIcon`}
           >
             {t("about")}
           </Link>
@@ -46,7 +46,7 @@ const MenuFooter = () => {
               pathname === `/${currentLocale}/portfolio`
                 ? "border-white xl:hover:border-accent"
                 : "border-black"
-            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-accent`}
+            } border-b text-lg font-normal transition-colors duration-500 xl:text-2xl xl:hover:text-yellowIcon`}
           >
             {t("projects")}
           </Link>

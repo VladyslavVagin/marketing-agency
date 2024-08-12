@@ -5,7 +5,7 @@ export const variantSub1 = {
     y: 0,
     transition: {
       duration: 0.7,
-      delay: 0.2,
+      delay: 0,
     },
   },
 };
@@ -16,8 +16,8 @@ export const variantSub2 = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
-      delay: 0.5,
+      duration: 0.9,
+      delay: 0,
     },
   },
 };
@@ -29,7 +29,7 @@ export const variantScale = {
     scale: 1,
     transition: {
       duration: 1.0,
-      delay: 0.7,
+      delay: 0,
     },
   },
 };
