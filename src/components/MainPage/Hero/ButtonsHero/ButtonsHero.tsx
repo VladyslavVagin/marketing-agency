@@ -25,7 +25,7 @@ const ButtonsHero = () => {
         {t("btnAbout")}
       </Link>
       <a
-        href="/CV/CV_Vagin_Vladyslav_en.pdf"
+        href={`/CV/CV_Vagin_Vladyslav_${currentLocale}.pdf`}
         download={true}
         aria-label={t("btnDownloadAriaLabel")}
         className="btn-link bg-accent text-white border-white border-[1px]"
