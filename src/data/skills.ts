@@ -13,13 +13,13 @@ export const skills = [
   },
   {
     id: 3,
-    name: "React, Next, Redux",
+    name: "React, Next",
     progress: 95,
     color: "#3D95B7",
   },
   {
     id: 4,
-    name: "Node, Express, JWT",
+    name: "Node, Express",
     progress: 80,
     color: "#009e1a",
   },
