@@ -10,10 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "#583EBC",
-        blackLight: "#333333",
-        yellowIcon: "#ff8c42",
+        black: "#2F4858",
+        accent: "#33658A",
+        blackLight: "##2F4858",
+        yellowIcon: "#F6AE2D",
         grayText: "rgba(51, 51, 51, 0.5)",
+        lightBlue: "#86BBD8"
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],

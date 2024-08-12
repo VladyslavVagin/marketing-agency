@@ -49,7 +49,7 @@ const Information: FC<Project> = ({ project }) => {
             ></span>
           </div>
           <motion.span
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
             variants={variantOpacity}
             initial="hidden"
             whileInView="show"
@@ -71,7 +71,7 @@ const Information: FC<Project> = ({ project }) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {project.skills.join(", ")}
             </motion.p>

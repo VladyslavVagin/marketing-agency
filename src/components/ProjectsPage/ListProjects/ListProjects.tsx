@@ -40,7 +40,7 @@ const ListProjects: FC<Props> = ({ category }) => {
   }, [category]);
 
   return (
-    <div className="px-3.5 bg-[#d1ebf5] py-20 relative z-20 rounded-b-[50px] mt-[-50px]">
+    <div className="px-3.5 bg-lightBlue py-20 relative z-20 rounded-b-[50px] mt-[-50px]">
       <motion.ul
         variants={variantButtons}
         initial="hidden"
