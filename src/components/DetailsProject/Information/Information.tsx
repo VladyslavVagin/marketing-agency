@@ -90,7 +90,7 @@ const Information: FC<Project> = ({ project }) => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             Soft
           </motion.span>
@@ -108,7 +108,7 @@ const Information: FC<Project> = ({ project }) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {project.soft.join(", ")}
             </motion.p>
@@ -127,7 +127,7 @@ const Information: FC<Project> = ({ project }) => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             {t("approaches")}
           </motion.span>
@@ -145,7 +145,7 @@ const Information: FC<Project> = ({ project }) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {project.approaches.join(", ")}
             </motion.p>
@@ -160,7 +160,7 @@ const Information: FC<Project> = ({ project }) => {
             ></span>
           </div>
           <motion.span
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
             variants={variantOpacity}
             initial="hidden"
             whileInView="show"
@@ -182,7 +182,7 @@ const Information: FC<Project> = ({ project }) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {project.details}
             </motion.p>

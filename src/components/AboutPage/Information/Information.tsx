@@ -125,7 +125,7 @@ const Information = () => {
             ></span>
           </div>
           <motion.span
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
             variants={variantsBackdrop}
             initial="hidden"
             whileInView="show"
@@ -143,7 +143,7 @@ const Information = () => {
             className="bg-white w-80 rounded-2xl px-2 md:px-12 py-10 shadow-xl md:w-[680px] xl:w-full"
           >
             <motion.p
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
               variants={variantsLI1}
               initial="hidden"
               whileInView="show"
@@ -156,7 +156,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("textSeaman2")}
             </motion.p>
@@ -190,7 +190,7 @@ const Information = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             {t("goit")}
           </motion.span>
@@ -208,7 +208,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {t("goitText1")}
             </motion.p>
@@ -217,7 +217,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("goitText2")}
             </motion.p>
@@ -226,7 +226,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("goitText3")}
             </motion.p>
@@ -282,7 +282,7 @@ const Information = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             {t("getafe")}
           </motion.span>
@@ -300,7 +300,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {t("getafeText1")}
             </motion.p>
@@ -309,7 +309,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("getafeText2")}
             </motion.p>
@@ -318,7 +318,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("getafeText3")}
             </motion.p>
@@ -338,7 +338,7 @@ const Information = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             {t("searchJob")}
           </motion.span>
@@ -356,7 +356,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {t("searchJobText1")}
             </motion.p>
@@ -365,7 +365,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold mt-3"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold mt-3"
             >
               {t("searchJobText2")}
             </motion.p>
@@ -385,7 +385,7 @@ const Information = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className={`${paytoneOne.className} text-logo`}
+            className={`${paytoneOne.className} text-logo text-black`}
           >
             {t("hobby")}
           </motion.span>
@@ -403,7 +403,7 @@ const Information = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-lg font-light text-gray-500 md:text-2xl xl:font-semibold"
+              className="text-lg font-light text-black md:text-2xl xl:font-semibold"
             >
               {t("hobbyText")}
             </motion.p>
