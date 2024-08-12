@@ -94,7 +94,7 @@ export default async function RootLayout({
       <NextIntlClientProvider messages={messages}>
         <body className={`${montserrat.className}`}>
           <Header />
-          <main className="bg-lightBlue min-h-screen overflow-hidden">
+          <main className="bg-lightBlue min-h-screen overflow-hidden text-black">
             {children}
           </main>
           <Footer />
