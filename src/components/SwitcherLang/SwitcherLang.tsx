@@ -24,7 +24,7 @@ const SwitcherLang = () => {
         defaultValue={currentLocale}
         onChange={handleSelect}
         disabled={isPending}
-        className="bg-accent text-white text-xl border-b border-b-gray-300 px-2 py-1 cursor-pointer outline-none transition-colors duration-500 xl:hover:text-yellow-500 xl:hover:border-yellow-500"
+        className="bg-accent text-white text-xl px-2 py-1 cursor-pointer outline-none transition-colors duration-500 xl:hover:text-yellow-500"
       >
         <option
           value="en"
