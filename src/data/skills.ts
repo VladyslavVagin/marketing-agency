@@ -19,7 +19,7 @@ export const skills = [
   },
   {
     id: 4,
-    name: "Node, Express",
+    name: "Express, Nest",
     progress: 80,
     color: "#009e1a",
   },

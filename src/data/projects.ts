@@ -435,5 +435,19 @@ export const getProjectsData = (t: (key: string) => string) => [
       description: t("chocoDescription"),
       details: t("chocoDetails"),
     },
+    {
+      id: 16,
+      path: "/live-docs",
+      title: "LiveDocs",
+      thumbnail: "/images/portfolio/livedocs.webp",
+      categoty: "frontend",
+      skills: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Clerk", "Liveblocks"],
+      soft: ["VSCode", "Figma", "Git", "GitHub", "Vercel"],
+      approaches: ["Real-time collaboration", "Authentication", "Responsive layout"],
+      repositoryURL: "https://github.com/VladyslavVagin/real-documentation",
+      liveURL: "https://real-documentation.vercel.app",
+      description: t("liveDocsDescription"),
+      details: t("liveDocsDetails"),
+    }
   ];
   

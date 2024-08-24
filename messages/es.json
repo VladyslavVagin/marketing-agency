@@ -2,7 +2,7 @@
   "HomePage": {
     "heroSubtitle": "portafolio",
     "title": "Hola, Soy Vlad Vagin",
-    "textHero": "Desarrollador web frontend y MERN-stack especializado en HTML5/CSS3, JavaScript, React.js, Next.js, TypeScript, Node.js, bases de datos NoSQL/SQL, APIs REST y WordPress.",
+    "textHero": "Desarrollador Web Fullstack especializado en HTML5/CSS3, JavaScript, React.js, Next.js, TypeScript, Node.js, Nest.js, bases de datos NoSQL/SQL, APIs REST y WordPress.",
     "btnAbout": "Sobre mi",
     "btnAboutAriaLabel":"Ir a la página de información / sobre mí",
     "btnDownload": "Descargar CV",
@@ -16,7 +16,7 @@
     "textRestApis": "Crear interfaces que permiten a diferentes aplicaciones de software comunicarse e intercambiar datos. Tengo experiencia en el diseño e implementación de APIs REST seguras, eficientes y escalables con Node.js",
     "skills": "Mis habilidades",
     "whatSkills":"Frontend, Backend y Software",
-    "textSkills": "Me especializo en JavaScript, TypeScript, React, Next y tengo experiencia en desarrollo backend con Node.js. También soy competente en el uso de varias herramientas de desarrollo, como npm y Git, Redux y Firebase. Mi enfoque está en escribir código limpio, eficiente y mantenible.",
+    "textSkills": "Me especializo en JavaScript, TypeScript, React, Next y tengo experiencia en desarrollo backend con Node.js, Express.js y Nest.js. También soy competente en el uso de varias herramientas de desarrollo, como npm y Git, Redux y Firebase. Mi enfoque está en escribir código limpio, eficiente y mantenible.",
     "featuredWorks": "Trabajos Destacados",
     "seeMore": "Ver Más +",
     "shapeAlt": "Forma para decoración",
@@ -146,6 +146,8 @@
     "webstudioDescription":"Págína de aterrizaje de un Estudio Web. Proyecto individual del curso de HTML/CSS.",
     "webstudioDetails":"Proyecto individual del curso de HTML/CSS. Incluye sliders, formulario de pedido y superposición de tarjetas. Todo el proyecto fue creado con HTML5, CSS3 y JavaScript para los modales.",
     "chocoDescription":"Págína de aterrizaje de Simply Chocolate. Proyecto individual del curso de HTML/CSS. Incluye sliders, formulario de reseñas e imitación de carrito de compras.",
-    "chocoDetails":"Proyecto individual de página de aterrizaje del curso de HTML/CSS. Incluye sliders, formulario de reseñas e imitación de carrito de compras. Todo el proyecto fue creado con HTML5, CSS3 y JavaScript para modales, carrito de compras y animaciones."
+    "chocoDetails":"Proyecto individual de página de aterrizaje del curso de HTML/CSS. Incluye sliders, formulario de reseñas e imitación de carrito de compras. Todo el proyecto fue creado con HTML5, CSS3 y JavaScript para modales, carrito de compras y animaciones.",
+    "liveDocsDescription":"LiveDocs - colaboración en documentos en tiempo real. El usuario puede crear, editar, eliminar documentos, compartirlos con otros usuarios y hacer comentarios.",
+    "liveDocsDetails":"Esta aplicación en tiempo real fue creada con Next, TypeScript, Clerk Authentication y la biblioteca Liveblocks. Todos pueden crear documentos, compartirlos con sus amigos o miembros del equipo (solo aquellos que se registren en la aplicación web) e ingresar texto, comentar, añadir emoticonos y muchas otras cosas. El creador del documento puede gestionar los permisos de los usuarios (ver o editar). Todos los cambios en los documentos ocurren en tiempo real. Un usuario puede ver cómo otro usuario ingresa texto y comenta. También hay notificaciones cuando un usuario recibe una invitación de otro usuario. Los usuarios pueden registrarse en la aplicación con una cuenta de Google o GitHub."
   }
 }

@@ -2,7 +2,7 @@
   "HomePage": {
     "heroSubtitle": "portfolio",
     "title": "Hello, I am Vlad Vagin",
-    "textHero":"Frontend and MERN-stack Web Developer who specialize in HTML5/CSS3, JavaScript, React.js, Next.js, TypeScript, Node.js, NoSQL/SQL databases, REST APIs and WordPress.",
+    "textHero":"Fullstack Web Developer who specialize in HTML5/CSS3, JavaScript, React.js, Next.js, TypeScript, Node.js, Nest.js, NoSQL/SQL databases, REST APIs and WordPress.",
     "btnAbout":"About",
     "btnAboutAriaLabel":"Go to the about page",
     "btnDownload":"Download CV",
@@ -16,7 +16,7 @@
     "textRestApis":"Creating interfaces that allow different software applications to communicate and exchange data. I have experience in designing and implementing secure, efficient, and scalable REST APIs with Node.js.",
     "skills":"my skills",
     "whatSkills":"Frontend, Backend and Software",
-    "textSkills":"I specialize in JavaScript, TypeScript, React, Next and have experience with backend development using Node.js. I am also proficient in using various development tools such as npm and Git, Redux and Firebase. My focus is on writing clean, efficient, and maintainable code.",
+    "textSkills":"I specialize in JavaScript, TypeScript, React, Next and have experience with backend development using Node.js, Express.js and Nest.js. I am also proficient in using various development tools such as npm and Git, Redux and Firebase. My focus is on writing clean, efficient, and maintainable code.",
     "featuredWorks": "Featured Works",
     "seeMore":"See More +",
     "shapeAlt":"Shape for decoration",
@@ -146,6 +146,8 @@
     "webstudioDescription":"Landing page of Web Studio. Individual project of HTML/CSS course.",
     "webstudioDetails":"Individual project of HTML/CSS course. Have sliders, order form and card's overlay. All project was created with HTML5, CSS3 and JavaScript for modals.",
     "chocoDescription":"Landing page of Simply Chocolate. Individual project of HTML/CSS course. Have sliders, form review and imitation of shopping cart.",
-    "chocoDetails":"Individual landing project of HTML/CSS course. Have sliders, form review and imitation of shopping cart. All project was created with HTML5, CSS3 and JavaScript for modals, shopping card and animation."
+    "chocoDetails":"Individual landing project of HTML/CSS course. Have sliders, form review and imitation of shopping cart. All project was created with HTML5, CSS3 and JavaScript for modals, shopping card and animation.",
+    "liveDocsDescription":"LiveDocs - real-time document collaboration. User can create, edit, delete documents, share them with other users, and makes comments.",
+    "liveDocsDetails":"This real-time application was created with Next, Typescript, Clerk Authentication and Liveblocks library. Everyone can create document, share with his/her friends or team members (only who register in web app) and enter text, comment text, add smiles and a lot of other thinks. Creator of document can manage users’ permissions ( view or edit). All changes of documents happen in real-time. One user can see like other user enter text and comment. Also there are notifications when user get invitation from other user. Users can register in app with Google or GitHub account."
   }
 }
