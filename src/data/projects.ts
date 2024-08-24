@@ -440,7 +440,7 @@ export const getProjectsData = (t: (key: string) => string) => [
       path: "/live-docs",
       title: "LiveDocs",
       thumbnail: "/images/portfolio/livedocs.webp",
-      categoty: "frontend",
+      category: "frontend",
       skills: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Clerk", "Liveblocks"],
       soft: ["VSCode", "Figma", "Git", "GitHub", "Vercel"],
       approaches: ["Real-time collaboration", "Authentication", "Responsive layout"],
