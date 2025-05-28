@@ -8,7 +8,7 @@ export const skills = [
   {
     id: 2,
     name: "JS/TS",
-    progress: 86,
+    progress: 90,
     color: "#C9614D",
   },
   {
@@ -20,7 +20,7 @@ export const skills = [
   {
     id: 4,
     name: "Express, Nest",
-    progress: 80,
+    progress: 95,
     color: "#009e1a",
   },
 ];
