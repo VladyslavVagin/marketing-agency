@@ -106,7 +106,7 @@ const Information = () => {
               className="relative w-full h-40 mt-6"
             >
               <Image
-                src="/images/about/banner.webp"
+                src="/images/about/banner.png"
                 alt={t("banner")}
                 layout="fill"
                 objectFit="contain"
@@ -326,7 +326,7 @@ const Information = () => {
         </div>
       </div>
 
-      <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
+      {/* <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
         <div className="flex items-center justify-start gap-3">
           <div className={`w-12 h-12 rounded-xl bg-accent relative`}>
             <span
@@ -371,7 +371,7 @@ const Information = () => {
             </motion.p>
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       <div className="max-w-[346px] md:max-w-[768px] xl:max-w-full">
         <div className="flex items-center justify-start gap-3">

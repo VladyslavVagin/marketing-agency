@@ -61,7 +61,7 @@
   "Footer": {
     "slogan": "Creando experiencias digitales, una línea de código a la vez.",
     "contactFooter": "Contacto",
-    "address": "Madrid, España",
+    "address": "Oviedo, Asturias, España",
     "callUs": "Llámanos al +34 665 051 466",
     "sendEmail": "Envía un mensaje a mi correo electrónico: vladtwince@gmail.com"
   },
@@ -152,6 +152,8 @@
     "chocoDescription":"Págína de aterrizaje de Simply Chocolate. Proyecto individual del curso de HTML/CSS. Incluye sliders, formulario de reseñas e imitación de carrito de compras.",
     "chocoDetails":"Proyecto individual de página de aterrizaje del curso de HTML/CSS. Incluye sliders, formulario de reseñas e imitación de carrito de compras. Todo el proyecto fue creado con HTML5, CSS3 y JavaScript para modales, carrito de compras y animaciones.",
     "liveDocsDescription":"LiveDocs - colaboración en documentos en tiempo real. El usuario puede crear, editar, eliminar documentos, compartirlos con otros usuarios y hacer comentarios.",
-    "liveDocsDetails":"Esta aplicación en tiempo real fue creada con Next, TypeScript, Clerk Authentication y la biblioteca Liveblocks. Todos pueden crear documentos, compartirlos con sus amigos o miembros del equipo (solo aquellos que se registren en la aplicación web) e ingresar texto, comentar, añadir emoticonos y muchas otras cosas. El creador del documento puede gestionar los permisos de los usuarios (ver o editar). Todos los cambios en los documentos ocurren en tiempo real. Un usuario puede ver cómo otro usuario ingresa texto y comenta. También hay notificaciones cuando un usuario recibe una invitación de otro usuario. Los usuarios pueden registrarse en la aplicación con una cuenta de Google o GitHub."
+    "liveDocsDetails":"Esta aplicación en tiempo real fue creada con Next, TypeScript, Clerk Authentication y la biblioteca Liveblocks. Todos pueden crear documentos, compartirlos con sus amigos o miembros del equipo (solo aquellos que se registren en la aplicación web) e ingresar texto, comentar, añadir emoticonos y muchas otras cosas. El creador del documento puede gestionar los permisos de los usuarios (ver o editar). Todos los cambios en los documentos ocurren en tiempo real. Un usuario puede ver cómo otro usuario ingresa texto y comenta. También hay notificaciones cuando un usuario recibe una invitación de otro usuario. Los usuarios pueden registrarse en la aplicación con una cuenta de Google o GitHub.",
+    "vocaliDescription": "Vocali - aplicación web para subir audio y grabar audio en tiempo real, así como para la transcripción a texto. El usuario puede descargar el texto de la transcripción correspondiente.",
+    "vocaliDetails": "El backend fue creado con Nest.js y desplegado en AWS con Terraform. Cuando subimos audio desde la interfaz, se almacena en un bucket de S3 y la transcripción de audio se guarda en DynamoDB. Existe autenticación con el servicio AWS Cognito. El usuario recibirá un código para registrarse e iniciar sesión en la aplicación. La transcripción en tiempo real la hacemos con la API de Speechmatics. Este proyecto es un proyecto piloto."
   }
 }
